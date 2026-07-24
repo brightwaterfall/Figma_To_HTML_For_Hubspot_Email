@@ -17,6 +17,7 @@ venv/
 Thumbs.db
 .idea/
 .vscode/
+.cursor/
 *.swp
 
 # Local Figma/build helpers — keep out of the repo
