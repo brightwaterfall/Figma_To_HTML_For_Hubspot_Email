@@ -70,14 +70,19 @@ def bulletproof_btn(label, href="https://www.etreprof.fr/", bg=PURPLE, width=Non
                       </table>"""
 
 
-def outline_btn(label, href="https://www.etreprof.fr/", color=PURPLE, bg=WHITE):
-    """Figma Badge / subtle Incentive — stroke 1px purple, radii 14/14/14/0, pad 7/12."""
+def outline_btn(label, href="https://www.etreprof.fr/", color=PURPLE, bg="transparent"):
+    """Outline CTA — no fill so section background shows through; radii 14/14/14/0, pad 7/12."""
+    # Outlook VML: unfilled stroke when bg is transparent; otherwise solid fillcolor
+    if bg == "transparent":
+        mso_fill = 'filled="f"'
+    else:
+        mso_fill = f'fillcolor="{bg}"'
     return f"""
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
                         <tr>
                           <td align="center" style="padding:0;">
                             <!--[if mso]>
-                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{href}" style="height:35px;v-text-anchor:middle;width:122px;" arcsize="40%" strokecolor="{color}" fillcolor="{bg}">
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{href}" style="height:35px;v-text-anchor:middle;width:122px;" arcsize="40%" strokecolor="{color}" {mso_fill}>
                               <w:anchorlock/>
                               <center style="color:{color};font-family:Arial,sans-serif;font-size:16px;font-weight:700;">{label}</center>
                             </v:roundrect>
