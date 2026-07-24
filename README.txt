@@ -49,7 +49,7 @@ Folder structure
   /css/styles.css          (optional media-query helpers; emails are inline-first)
   /images/                 heroes, cards, logos, decorations
   /icons/                  social PNG icons (email-safe)
-  /fonts/                  reserved (web fonts loaded via Google Fonts CDN)
+  /fonts/                  self-hosted woff2 (subset; Google Fonts fallbacks remain in CSS)
   /README.txt
 
 
