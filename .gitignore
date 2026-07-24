@@ -19,7 +19,8 @@ Thumbs.db
 .vscode/
 *.swp
 
+# Local Figma/build helpers — keep out of the repo
+assets/
+
 # Temp / local QA scratch
-assets/_figma_check.json
-assets/_*.py
 *.log
