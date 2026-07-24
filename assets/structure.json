@@ -1,0 +1,380 @@
+{
+  "email-01": {
+    "id": "2259:309",
+    "width": 600.0,
+    "height": 1469.0,
+    "bg": "#F3F3E9",
+    "sections": [
+      {
+        "name": "🚣 Logo Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 139.0,
+        "bg": "#FFFFFF",
+        "pt": 13.0,
+        "pr": 16.0,
+        "pb": 43.0,
+        "pl": 16.0,
+        "gap": 10.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Full Image (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 313.0,
+        "bg": "#FFFFFF",
+        "pt": null,
+        "pr": null,
+        "pb": null,
+        "pl": null,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Title, Text & Button (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 396.0,
+        "bg": "#FFFFF9",
+        "pt": null,
+        "pr": 66.0,
+        "pb": null,
+        "pl": 66.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "Bloc réassurance — lien à renseigner",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 252.0,
+        "bg": "#FFFFFF",
+        "pt": 23.0,
+        "pr": 42.0,
+        "pb": 30.0,
+        "pl": 40.0,
+        "gap": 18.0,
+        "cr": null
+      },
+      {
+        "name": "Emplacement optionnel — cadeau à la clé",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 198.0,
+        "bg": "#F8F3FF",
+        "pt": 30.0,
+        "pr": 40.0,
+        "pb": 20.0,
+        "pl": 40.0,
+        "gap": 10.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Footer Stacked Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 171.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      }
+    ]
+  },
+  "email-02": {
+    "id": "2296:463",
+    "width": 600.0,
+    "height": 2315.0,
+    "bg": "#F3F3E9",
+    "sections": [
+      {
+        "name": "Frame 7",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 1537.0,
+        "bg": null,
+        "pt": null,
+        "pr": null,
+        "pb": null,
+        "pl": null,
+        "gap": null,
+        "cr": null
+      },
+      {
+        "name": "🚣 Title, Text & Button (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 353.0,
+        "bg": "#F8F3FF",
+        "pt": 60.0,
+        "pr": 66.0,
+        "pb": 60.0,
+        "pl": 66.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Heading With Paragraph (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 254.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 35.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Footer Stacked Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 171.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      }
+    ]
+  },
+  "email-03": {
+    "id": "2016:274",
+    "width": 600.0,
+    "height": 1505.0,
+    "bg": "#F3F3E9",
+    "sections": [
+      {
+        "name": "🚣 Logo Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 139.0,
+        "bg": "#FFFFFF",
+        "pt": 13.0,
+        "pr": 16.0,
+        "pb": 43.0,
+        "pl": 16.0,
+        "gap": 10.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Full Image (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 313.0,
+        "bg": "#FFFFFF",
+        "pt": null,
+        "pr": null,
+        "pb": null,
+        "pl": null,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Title, Text & Button (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 281.0,
+        "bg": "#FFFFF9",
+        "pt": null,
+        "pr": 66.0,
+        "pb": 24.0,
+        "pl": 66.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 CTA Card Split (Row For Content Columns)",
+        "type": "COMPONENT",
+        "w": 600.0,
+        "h": 244.0,
+        "bg": "#F8F3FF",
+        "pt": 29.0,
+        "pr": 80.0,
+        "pb": 29.0,
+        "pl": 80.0,
+        "gap": 18.0,
+        "cr": 7.0
+      },
+      {
+        "name": "🚣 Icon List (Row For Content Columns)",
+        "type": "COMPONENT",
+        "w": 600.0,
+        "h": 223.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 19.0,
+        "pl": 79.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🎁 Stacked Icon Stats Cards (Wrapper For Multiple Rows)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 134.0,
+        "bg": "#FFFFFF",
+        "pt": 16.0,
+        "pr": 16.0,
+        "pb": 16.0,
+        "pl": 16.0,
+        "gap": 17.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Footer Stacked Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 171.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      }
+    ]
+  },
+  "email-04": {
+    "id": "2011:102",
+    "width": 600.0,
+    "height": 600.0,
+    "bg": "#F3F3E9",
+    "sections": [
+      {
+        "name": "🚣 Logo Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 83.0,
+        "bg": "#FFFFFF",
+        "pt": 16.0,
+        "pr": 16.0,
+        "pb": 16.0,
+        "pl": 16.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Title, Text & Button (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 258.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 66.0,
+        "pb": 24.0,
+        "pl": 66.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Paragraph (Row For Content Columns)",
+        "type": "COMPONENT",
+        "w": 600.0,
+        "h": 88.0,
+        "bg": "#FFFFFF",
+        "pt": 14.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Footer Stacked Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 171.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      }
+    ]
+  },
+  "email-05": {
+    "id": "2223:189",
+    "width": 600.0,
+    "height": 1279.0,
+    "bg": "#F3F3E9",
+    "sections": [
+      {
+        "name": "🚣 Logo Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 139.0,
+        "bg": "#FFFFFF",
+        "pt": 13.0,
+        "pr": 16.0,
+        "pb": 43.0,
+        "pl": 16.0,
+        "gap": 10.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Full Image (Row For Content Columns)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 313.0,
+        "bg": "#FFFFFF",
+        "pt": null,
+        "pr": null,
+        "pb": null,
+        "pl": null,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Title, Text & Button (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 335.0,
+        "bg": "#FFFFF9",
+        "pt": null,
+        "pr": 66.0,
+        "pb": 24.0,
+        "pl": 66.0,
+        "gap": 16.0,
+        "cr": null
+      },
+      {
+        "name": "🎁 Stacked Icon Stats Cards (Wrapper For Multiple Rows)",
+        "type": "FRAME",
+        "w": 600.0,
+        "h": 321.0,
+        "bg": "#FFFFFF",
+        "pt": 16.0,
+        "pr": 16.0,
+        "pb": 16.0,
+        "pl": 16.0,
+        "gap": 8.0,
+        "cr": null
+      },
+      {
+        "name": "🚣 Footer Stacked Center (Row For Content Columns)",
+        "type": "INSTANCE",
+        "w": 600.0,
+        "h": 171.0,
+        "bg": "#FFFFFF",
+        "pt": 32.0,
+        "pr": 32.0,
+        "pb": 32.0,
+        "pl": 32.0,
+        "gap": 16.0,
+        "cr": null
+      }
+    ]
+  }
+}

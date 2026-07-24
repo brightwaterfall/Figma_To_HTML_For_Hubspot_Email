@@ -1,0 +1,42 @@
+/*
+  Optional helpers for local browser preview.
+  HubSpot emails rely primarily on inline CSS in each email-0X.html.
+  Do not depend on this file inside HubSpot imports.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3e9;
+}
+
+img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media only screen and (max-width: 620px) {
+  .email-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .stack-column {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .mobile-pad {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}

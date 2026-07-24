@@ -1,0 +1,804 @@
+{
+  "email-01": [
+    {
+      "chars": "Ton avis",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 20.0,
+      "lh": 25.139999389648438,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "On construit la suite avec toi.",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 29.0,
+      "lh": 35.09000015258789,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Tu utilises ÊtrePROF au quotidien. Pour que la plateforme\nréponde vraiment à tes réalités de terrain, nous avons besoin de\nton retour. Tes réponses guideront nos prochaines nouveautés.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 21.1200008392334,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Je donne mon avis",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "⏱️ Promis, cela te prendra moins de 2 minutes.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 15.0,
+      "lh": 22.5,
+      "align": "CENTER",
+      "color": "#A6A6A6"
+    },
+    {
+      "chars": "Merci pour ton aide précieuse,\nL'équipe ÊtrePROF",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 21.1200008392334,
+      "align": "CENTER",
+      "color": "#000000"
+    },
+    {
+      "chars": "Pourquoi votre participation\nest essentielle ?",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 28.910999298095703,
+      "align": "CENTER",
+      "color": "#0E1E38"
+    },
+    {
+      "chars": "Vos réponses font avancer une cause commune : mieux comprendre les besoins du terrain pour faire évoluer les solutions utiles à toute  la communauté éducative.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 20.92799949645996,
+      "align": "CENTER",
+      "color": "#192633"
+    },
+    {
+      "chars": "En savoir plus sur la démarche →",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 16.0,
+      "lh": 20.92799949645996,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "À DÉCOUVRIR",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 16.0,
+      "lh": 20.92799949645996,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Un petit plus pour vous remercier",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 28.910999298095703,
+      "align": "CENTER",
+      "color": "#0E1E38"
+    },
+    {
+      "chars": "Module à activer uniquement lorsqu’un avantage est proposé. Vocabulaire volontairement sobre pour préserver la délivrabilité.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 20.92799949645996,
+      "align": "CENTER",
+      "color": "#192633"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    }
+  ],
+  "email-02": [
+    {
+      "chars": "Spécial Inclusion",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 14.0,
+      "lh": 17.597999572753906,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": " Maternelle",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 14.0,
+      "lh": 17.597999572753906,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "L'essentiel pour ta classe",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 29.0,
+      "lh": 35.09000015258789,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Bonjour [Prénom], découvre les nouvelles thématiques de la\nsemaine. On met le cap sur l'inclusion et les rituels de transition\npour apaiser tes journées.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 21.1200008392334,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Découvrir la sélection",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Les ressources à la une",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "LEFT",
+      "color": "#313233"
+    },
+    {
+      "chars": "Nouveau ",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 10.0,
+      "lh": 12.569999694824219,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Fiche outil : Gérer le retour au calme",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "⭐  Approuvé par 45 profs",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 10.0,
+      "lh": 13.079999923706055,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 12.0,
+      "lh": 14.076000213623047,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Atelier : La boîte à émotions",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "⭐  Approuvé par 28 profs",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 10.0,
+      "lh": 13.079999923706055,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Des cartes prêtes à imprimer pour aider les élèves à verbaliser leurs ressentis dès le rituel du matin.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 12.0,
+      "lh": 14.076000213623047,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Les ressources à la une",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "LEFT",
+      "color": "#313233"
+    },
+    {
+      "chars": "Nouveau ",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 10.0,
+      "lh": 12.569999694824219,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Fiche outil : Gérer le retour au calme",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "⭐  Approuvé par 45 profs",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 10.0,
+      "lh": 13.079999923706055,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 12.0,
+      "lh": 14.076000213623047,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Atelier : La boîte à émotions",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "⭐  Approuvé par 28 profs",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 10.0,
+      "lh": 13.079999923706055,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Des cartes prêtes à imprimer pour aider les élèves à verbaliser leurs ressentis dès le rituel du matin.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 12.0,
+      "lh": 14.076000213623047,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Prochains ateliers",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "LEFT",
+      "color": "#313233"
+    },
+    {
+      "chars": "Développer les compétences orales des élèves avec l'IA : activités et prompts à utiliser",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Mickaël Bertrand Professeur d’histoire-géographie-EMC",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 10.0,
+      "lh": 11.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "19h",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "20 juillet 2026",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "En ligne",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Développer les compétences orales des élèves avec l'IA : activités et prompts à utiliser",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 14.0,
+      "lh": 17.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Mickaël Bertrand Professeur d’histoire-géographie-EMC",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 10.0,
+      "lh": 11.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "19h",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "20 juillet 2026",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "En ligne",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "\"",
+      "font": "Candal",
+      "weight": 400,
+      "size": 53.0,
+      "lh": 64.1300048828125,
+      "align": "CENTER",
+      "color": "#A47AFF"
+    },
+    {
+      "chars": "Comment gérez-vous le retour au calme\naprès la récréation avec une classe très agitée ?",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 26.0,
+      "lh": 34.05999755859375,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "— Question de Sarah, professeure de CE2",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 24.0,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Partager mon astuce",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Aller plus loin sur le bien-être à l’école",
+      "font": "Merriweather",
+      "weight": 600,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Dans le prolongement de cet article, Scholavie propose des ressources complémentaires pour accompagner vos élèves.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 21.1200008392334,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Découvrir les ressources →",
+      "font": "Assistant",
+      "weight": 700,
+      "size": 16.0,
+      "lh": 20.92799949645996,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    }
+  ],
+  "email-03": [
+    {
+      "chars": " Top chrono : 10 min",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 14.0,
+      "lh": 17.597999572753906,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Ta prochaine séance, prête en un instant.",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Bonjour [Prénom], tu as déjà passé ton dimanche après-midi devant une page blanche ? Sur le nouvel ÊtrePROF, tu ne pars plus de zéro. Gagne un temps précieux en t'appuyant sur les séquences créées et testées par tes collègues.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 21.1200008392334,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Séance : Découvrir le système solaire",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 23.0,
+      "lh": 25.0,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "De la Terre à Neptune : 3 séances interactives pour modéliser le système solaire et captiver ta classe.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 12.0,
+      "lh": 14.076000213623047,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Cycle 3",
+      "font": "Inter",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 15.732954025268555,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "Sciences",
+      "font": "Inter",
+      "weight": 700,
+      "size": 13.0,
+      "lh": 15.732954025268555,
+      "align": "CENTER",
+      "color": "#FFFFFF"
+    },
+    {
+      "chars": "⭐  Approuvé par 120 profs de la communauté",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 10.0,
+      "lh": 13.079999923706055,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "1",
+      "font": "Arial",
+      "weight": 700,
+      "size": 45.0,
+      "lh": 51.74560546875,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Trouve l'idée : Laisse-toi inspirer par les séquences de la\ncommunauté.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 16.920000076293945,
+      "align": "LEFT",
+      "color": "#777777"
+    },
+    {
+      "chars": "2",
+      "font": "Arial",
+      "weight": 700,
+      "size": 45.0,
+      "lh": 51.74560546875,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Adapte au profil : Ajuste le contenu pour tes élèves en un\nclic.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 16.920000076293945,
+      "align": "LEFT",
+      "color": "#777777"
+    },
+    {
+      "chars": "3",
+      "font": "Arial",
+      "weight": 700,
+      "size": 45.0,
+      "lh": 51.74560546875,
+      "align": "CENTER",
+      "color": "#5F2EC8"
+    },
+    {
+      "chars": "Imprime le tout : Ta fiche et tes supports sont prêts pour\ndemain.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 16.920000076293945,
+      "align": "LEFT",
+      "color": "#777777"
+    },
+    {
+      "chars": "Préparer ma séance",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Rejoins les 15 000 profs qui ont déjà préparé leur semaine.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 15.0,
+      "lh": 22.5,
+      "align": "CENTER",
+      "color": "#A6A6A6"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    }
+  ],
+  "email-04": [
+    {
+      "chars": "Nouveau mot de passe",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Bonjour [Prénom], tu as demandé à réinitialiser ton mot de passe. Clique sur le bouton ci-dessous pour en créer un nouveau et retrouver ton espace de préparation.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 24.0,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Réinitialiser mon mot de passe",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Si tu n'es pas à l'origine de cette demande, ignore simplement cet e-mail.  Ton compte reste sécurisé.",
+      "font": "Assistant",
+      "weight": 300,
+      "size": 14.0,
+      "lh": 21.0,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    }
+  ],
+  "email-05": [
+    {
+      "chars": "Salle des professeurs - Maternelle Michel Bizot",
+      "font": "Merriweather",
+      "weight": 800,
+      "size": 12.0,
+      "lh": 15.083999633789062,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Bienvenue dans ta nouvelle salle des profs ",
+      "font": "Merriweather",
+      "weight": 500,
+      "size": 23.0,
+      "lh": 27.830001831054688,
+      "align": "CENTER",
+      "color": "#313233"
+    },
+    {
+      "chars": "Bonjour [Prénom], bienvenue sur le nouvel ÊtrePROF !  Nous avons repensé la plateforme pour qu'elle devienne ton véritable espace d'entraide et de co-working. Ici, on ne fait pas que télécharger des fiches : on s'inspire, on échange et on construit ensemble.",
+      "font": "Assistant",
+      "weight": 400,
+      "size": 16.0,
+      "lh": 24.0,
+      "align": "CENTER",
+      "color": "#231F20"
+    },
+    {
+      "chars": "Découvrir mon nouvel espace",
+      "font": "Merriweather",
+      "weight": 400,
+      "size": 18.0,
+      "lh": 22.625999450683594,
+      "align": "CENTER",
+      "color": "rgba(255,255,255,0.949)"
+    },
+    {
+      "chars": "Inspire-toi de milliers de ressources testées en classe.",
+      "font": "Merriweather",
+      "weight": 300,
+      "size": 17.0,
+      "lh": 21.368999481201172,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Adapte tes supports aux besoins spécifiques de tes élèves.",
+      "font": "Merriweather",
+      "weight": 300,
+      "size": 17.0,
+      "lh": 21.368999481201172,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Échange avec une communauté qui vit ton quotidien.",
+      "font": "Merriweather",
+      "weight": 300,
+      "size": 17.0,
+      "lh": 21.368999481201172,
+      "align": "LEFT",
+      "color": "#000000"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    },
+    {
+      "chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "font": "Assistant",
+      "weight": 600,
+      "size": 13.0,
+      "lh": 17.003999710083008,
+      "align": "CENTER",
+      "color": "#4B4B4B"
+    }
+  ]
+}
