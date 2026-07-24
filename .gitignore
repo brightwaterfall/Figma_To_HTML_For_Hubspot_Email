@@ -23,5 +23,12 @@ Thumbs.db
 # Local Figma/build helpers — keep out of the repo
 assets/
 
+# QA frame renders and unused scratch images (not referenced by emails)
+images/*-figma.png
+images/_*.png
+images/email-02-confetti.png
+images/email-02-handshake.png
+images/email-02-smile.png
+
 # Temp / local QA scratch
 *.log
