@@ -50,7 +50,6 @@ Folder structure
   /images/                 heroes, cards, logos, decorations
   /icons/                  social PNG icons (email-safe)
   /fonts/                  reserved (web fonts loaded via Google Fonts CDN)
-  /assets/                 Figma export helpers / QA frame renders
   /README.txt
 
 
