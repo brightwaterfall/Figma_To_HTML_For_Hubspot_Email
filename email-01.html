@@ -2,7 +2,7 @@
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=600">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
@@ -71,13 +71,10 @@
     .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
     .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
     .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
-    /* Mobile: keep scoop / badge geometry identical to desktop */
+/* Mobile: match Figma fixed 600px prototype (scale, do not reflow) */
     @media only screen and (max-width: 620px) {
-      .email-container { width: 100% !important; max-width: 100% !important; }
-      .fluid { width: 100% !important; max-width: 100% !important; height: auto !important; }
-      .stack-column { display: block !important; width: 100% !important; max-width: 100% !important; }
-      .stack-column-pad { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 16px !important; }
-      .mobile-pad { padding-left: 24px !important; padding-right: 24px !important; }
+      .email-container { width: 600px !important; max-width: 600px !important; }
+      .fluid { width: 100% !important; max-width: 600px !important; height: auto !important; }
       .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
       .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
       .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
