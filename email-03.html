@@ -79,7 +79,8 @@
     a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
     /* Hero scoop: cream block overlaps image; CSS radii only */
     .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
-    .hero-badge { top: -42px !important; }
+    /* Badge centered on scoop seam; left radii only */
+    .hero-badge { top: 0 !important; transform: translateY(-50%) !important; }
     /* Mobile */
     @media only screen and (max-width: 620px) {
       .email-container { width: 100% !important; max-width: 100% !important; }
@@ -88,7 +89,7 @@
       .stack-column-pad { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 16px !important; }
       .mobile-pad { padding-left: 24px !important; padding-right: 24px !important; }
       .hero-scoop { margin-top: -28px !important; border-top-left-radius: 32px !important; }
-      .hero-badge { top: -38px !important; }
+      .hero-badge { top: 0 !important; transform: translateY(-50%) !important; }
     }
   </style>
 </head>
@@ -124,8 +125,8 @@
                     </picture>
                   </div>
                   <div class="hero-scoop" style="margin-top:-34px;position:relative;z-index:2;background-color:#FFFFF9;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
-                    <div class="hero-badge" style="position:absolute;right:0;top:-42px;z-index:3;line-height:normal;font-size:0;text-align:right;">
-                      <span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:0;border-bottom-left-radius:0;">Top chrono : 10 min</span>
+                    <div class="hero-badge" style="position:absolute;right:0;top:0;transform:translateY(-50%);z-index:3;line-height:normal;font-size:0;text-align:right;">
+                      <span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:22px;">Top chrono : 10 min</span>
                     </div>
                     <div class="mobile-pad" style="padding:30px 66px 24px 66px;">
                 <!--<![endif]-->
