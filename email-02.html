@@ -79,7 +79,8 @@
     a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
     /* Hero scoop: cream block overlaps image; CSS radii only */
     .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
-    .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
+    /* Email-02 badges sit on the cream block, flush under the hero (not over the photo) */
+    .hero-badge { position: relative !important; top: auto !important; bottom: auto !important; right: auto !important; text-align: right !important; }
     /* Mobile */
     @media only screen and (max-width: 620px) {
       .email-container { width: 100% !important; max-width: 100% !important; }
@@ -123,10 +124,10 @@
                     </picture>
                   </div>
                   <div class="hero-scoop" style="margin-top:-34px;position:relative;z-index:2;background-color:#FFFFF9;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
-                    <div class="hero-badge" style="position:absolute;right:0;bottom:100%;top:auto;z-index:3;line-height:normal;font-size:0;text-align:right;">
-                      <span style="display:inline-block;padding:9px 18px;background-color:#F8F3FF;color:#5F2EC8;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:middle;">Spécial Inclusion</span><span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:middle;">Maternelle</span>
+                    <div class="hero-badge" style="text-align:right;line-height:normal;font-size:0;padding:0;">
+                      <span style="display:inline-block;padding:9px 18px;background-color:#F8F3FF;color:#5F2EC8;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-radius:22px;vertical-align:middle;">Spécial Inclusion</span><span style="display:inline-block;width:6px;font-size:0;line-height:0;">&nbsp;</span><span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-radius:22px;vertical-align:middle;">Maternelle</span>
                     </div>
-                    <div class="mobile-pad" style="padding:37px 61px;">
+                    <div class="mobile-pad" style="padding:24px 61px 37px 61px;">
                 <!--<![endif]-->
                 <!--[if mso]>
                 <img src="images/email-02-hero-clean.jpg" width="600" height="380" alt="Enfants jouant avec des blocs" style="display:block;border:0;outline:none;text-decoration:none;width:600px;height:380px;" />
