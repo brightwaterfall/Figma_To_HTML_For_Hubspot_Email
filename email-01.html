@@ -67,6 +67,9 @@
     img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
     body { margin: 0 !important; padding: 0 !important; width: 100% !important; height: 100% !important; background-color: #F3F3E9; }
     a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+    /* Hero scoop: cream block overlaps image; CSS radii only */
+    .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
+    .hero-badge { top: -43px !important; }
     /* Mobile */
     @media only screen and (max-width: 620px) {
       .email-container { width: 100% !important; max-width: 100% !important; }
@@ -74,6 +77,8 @@
       .stack-column { display: block !important; width: 100% !important; max-width: 100% !important; }
       .stack-column-pad { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 16px !important; }
       .mobile-pad { padding-left: 24px !important; padding-right: 24px !important; }
+      .hero-scoop { margin-top: -28px !important; border-top-left-radius: 32px !important; }
+      .hero-badge { top: -38px !important; }
     }
   </style>
 </head>
@@ -97,44 +102,42 @@
                 </a>
               </td>
             </tr>
-            <!-- Hero: full photo only; CSS radii + HTML badge overlay -->
+            <!-- Hero + scoop content (CSS overlap; badge on seam, right) -->
             <tr>
-              <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:0;line-height:0;font-size:0;">
+              <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:0;">
                 <!--[if !mso]><!-->
-                <div style="max-width:600px;margin:0 auto;position:relative;line-height:0;font-size:0;">
-                  <picture>
-                    <source type="image/webp" srcset="images/email-01-hero-clean-600.webp">
-                    <img src="images/email-01-hero-clean-600.jpg" width="600" height="380" alt="Deux enseignantes souriantes" fetchpriority="high" decoding="async" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;" />
-                  </picture>
-                  <div style="position:absolute;right:0;bottom:0;line-height:normal;font-size:0;text-align:right;">
-                    <span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:20px;line-height:25px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">Ton avis</span>
+                <div style="max-width:600px;margin:0 auto;position:relative;">
+                  <div style="line-height:0;font-size:0;">
+                    <picture>
+                      <source type="image/webp" srcset="images/email-01-hero-clean-600.webp">
+                      <img src="images/email-01-hero-clean-600.jpg" width="600" height="380" alt="Deux enseignantes souriantes" fetchpriority="high" decoding="async" class="fluid" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:0;border-bottom-left-radius:0;" />
+                    </picture>
                   </div>
-                </div>
+                  <div class="hero-scoop" style="margin-top:-34px;position:relative;z-index:2;background-color:#FFFFF9;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
+                    <div class="hero-badge" style="position:absolute;right:0;top:-43px;z-index:3;line-height:normal;font-size:0;text-align:right;">
+                      <span style="display:inline-block;padding:12px 22px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:20px;line-height:25px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:0;border-bottom-left-radius:0;">Ton avis</span>
+                    </div>
+                    <div class="mobile-pad" style="padding:30px 66px 40px 66px;text-align:center;">
                 <!--<![endif]-->
                 <!--[if mso]>
                 <img src="images/email-01-hero-clean.jpg" width="600" height="380" alt="Deux enseignantes souriantes" style="display:block;border:0;outline:none;text-decoration:none;width:600px;height:380px;" />
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center"><tr>
-                  <td align="right" style="padding:0;">
+                  <td align="right" style="padding:0;background-color:#FFFFF9;">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right"><tr>
                       <td bgcolor="#5F2EC8" style="padding:12px 22px;font-family:Georgia,serif;font-size:20px;font-weight:800;color:#FFFFFF;">Ton avis</td>
                     </tr></table>
                   </td>
-                </tr></table>
+                </tr>
+                <tr><td align="center" bgcolor="#FFFFF9" style="background-color:#FFFFF9;padding:30px 66px 40px 66px;">
                 <![endif]-->
-              </td>
-            </tr>
-            <!-- Title / CTA -->
-            <tr>
-              <td align="center" bgcolor="#FFFFF9" class="mobile-pad" style="background-color:#FFFFF9;padding:30px 66px 40px 66px;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
-                <h1 style="margin:0 0 25px 0;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:29px;line-height:35px;font-weight:500;color:#313233;text-align:center;">
-                  On construit la suite avec toi.
-                </h1>
-                <p style="margin:0 0 25px 0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#231F20;text-align:center;">
-                  Tu utilises ÊtrePROF au quotidien. Pour que la plateforme<br>
-                  réponde vraiment à tes réalités de terrain, nous avons besoin de<br>
-                  ton retour. Tes réponses guideront nos prochaines nouveautés.
-                </p>
-                
+                      <h1 style="margin:0 0 25px 0;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:29px;line-height:35px;font-weight:500;color:#313233;text-align:center;">
+                        On construit la suite avec toi.
+                      </h1>
+                      <p style="margin:0 0 25px 0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#231F20;text-align:center;">
+                        Tu utilises ÊtrePROF au quotidien. Pour que la plateforme<br>
+                        réponde vraiment à tes réalités de terrain, nous avons besoin de<br>
+                        ton retour. Tes réponses guideront nos prochaines nouveautés.
+                      </p>
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;">
                         <tr>
                           <td align="center" style="padding:0;">
@@ -150,13 +153,21 @@
                           </td>
                         </tr>
                       </table>
-                <p style="margin:25px 0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:15px;line-height:22.5px;font-weight:600;color:#A6A6A6;text-align:center;">
-                  ⏱️ Promis, cela te prendra moins de 2 minutes.
-                </p>
-                <p style="margin:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#000000;text-align:center;">
-                  Merci pour ton aide précieuse,<br>
-                  L'équipe ÊtrePROF
-                </p>
+                      <p style="margin:25px 0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:15px;line-height:22.5px;font-weight:600;color:#A6A6A6;text-align:center;">
+                        ⏱️ Promis, cela te prendra moins de 2 minutes.
+                      </p>
+                      <p style="margin:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#000000;text-align:center;">
+                        Merci pour ton aide précieuse,<br>
+                        L'équipe ÊtrePROF
+                      </p>
+                <!--[if !mso]><!-->
+                    </div>
+                  </div>
+                </div>
+                <!--<![endif]-->
+                <!--[if mso]>
+                </td></tr></table>
+                <![endif]-->
               </td>
             </tr>
             <!-- Reassurance -->
