@@ -48,7 +48,7 @@
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 300 800;
   font-display: swap;
   src: url(fonts/merriweather-var.woff2) format('woff2');
 }
@@ -80,7 +80,7 @@
     /* Hero scoop: cream block overlaps image; CSS radii only */
     .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
     .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
-    .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+    .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; }
     /* Card thumb + Nouveau (Figma 75x18): pull badge up with -18px so it sits on image bottom */
     .card-thumb { display: block !important; max-width: 203px !important; line-height: 0 !important; font-size: 0 !important; }
     .card-thumb picture,
@@ -100,7 +100,7 @@
       .fluid { width: 100% !important; max-width: 600px !important; height: auto !important; }
       .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
       .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
-      .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+      .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; }
       .card-thumb img {
         border-top-left-radius: 14px !important;
         border-top-right-radius: 14px !important;
@@ -111,7 +111,7 @@
       .card-badge-nouveau {
         border-top-left-radius: 22px !important;
         border-top-right-radius: 0 !important;
-        border-bottom-right-radius: 14px !important;
+        border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
       }
     }
@@ -145,12 +145,12 @@
                   <div style="line-height:0;font-size:0;">
                     <picture>
                       <source type="image/webp" srcset="images/email-02-hero-clean-600.webp">
-                      <img src="images/email-02-hero-clean-600.jpg" width="600" height="380" alt="Enfants jouant avec des blocs" fetchpriority="high" decoding="async" class="fluid hero-img" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:0;border-bottom-left-radius:0;" />
+                      <img src="images/email-02-hero-clean-600.jpg" width="600" height="380" alt="Enfants jouant avec des blocs" fetchpriority="high" decoding="async" class="fluid hero-img" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;" />
                     </picture>
                   </div>
                   <div class="hero-scoop" style="margin-top:-34px;position:relative;z-index:2;background-color:#FFFFF9;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
                     <div class="hero-badge" style="position:absolute;right:0;bottom:100%;top:auto;z-index:3;line-height:0;font-size:0;text-align:right;white-space:nowrap;">
-                      <span style="display:inline-block;padding:9px 22px;background-color:#F8F3FF;color:#5F2EC8;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:bottom;position:relative;z-index:1;">Spécial Inclusion</span><span style="display:inline-block;padding:12px 22px;margin-left:-13px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:bottom;position:relative;z-index:2;">Maternelle</span>
+                      <span style="display:inline-block;padding:12px 22px;background-color:#F8F3FF;color:#5F2EC8;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:bottom;position:relative;z-index:1;">Spécial Inclusion</span><span style="display:inline-block;padding:12px 22px;margin-left:-13px;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:14px;line-height:18px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;vertical-align:bottom;position:relative;z-index:2;">Maternelle</span>
                     </div>
                     <div class="mobile-pad" style="padding:37px 61px;">
                 <!--<![endif]-->
@@ -159,22 +159,22 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center"><tr>
                   <td align="right" style="padding:0;background-color:#FFFFF9;">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right"><tr>
-                      <td bgcolor="#F8F3FF" valign="bottom" style="padding:9px 22px;font-family:Georgia,serif;font-size:14px;font-weight:800;color:#5F2EC8;">Spécial Inclusion</td>
+                      <td bgcolor="#F8F3FF" valign="bottom" style="padding:12px 22px;font-family:Georgia,serif;font-size:14px;font-weight:800;color:#5F2EC8;">Spécial Inclusion</td>
                       <td bgcolor="#5F2EC8" valign="bottom" style="padding:12px 22px;font-family:Georgia,serif;font-size:14px;font-weight:800;color:#FFFFFF;">Maternelle</td>
                     </tr></table>
                   </td>
                 </tr>
                 <tr><td bgcolor="#FFFFF9" style="background-color:#FFFFF9;padding:37px 61px;">
                 <![endif]-->
-                <h1 style="margin:0 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:29px;line-height:35px;font-weight:600;color:#313233;text-align:center;">
+                <h1 style="margin:0 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:29px;line-height:35px;font-weight:600;letter-spacing:0;color:#323233;text-align:center;">
                   L'essentiel pour ta classe
                 </h1>
-                <p style="margin:0 0 16px 0;padding:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#231F20;text-align:center;">
+                <p style="margin:0 0 29px 0;padding:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;letter-spacing:0;color:#231F20;text-align:center;">
                   Bonjour [Prénom], découvre les nouvelles thématiques de la<br>
                   semaine. On met le cap sur l'inclusion et les rituels de transition<br>
                   pour apaiser tes journées.
                 </p>
-                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto 16px auto;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto 29px auto;">
                         <tr>
                           <td align="center" style="padding:0;">
                             <!--[if mso]>
@@ -189,10 +189,10 @@
                           </td>
                         </tr>
                       </table>
-                <div style="height:16px;line-height:16px;font-size:0;">&nbsp;</div>
+                <div style="height:9px;line-height:9px;font-size:0;">&nbsp;</div>
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
-                <div style="height:16px;line-height:16px;font-size:0;">&nbsp;</div>
-                <h2 style="margin:0 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;color:#313233;text-align:left;">
+                <div style="height:9px;line-height:9px;font-size:0;">&nbsp;</div>
+                <h2 style="margin:0 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;letter-spacing:0;color:#323233;text-align:left;">
                   Les ressources à la une
                 </h2>
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 16px 0;">
@@ -202,13 +202,13 @@
                             <div class="card-thumb card-thumb--new" style="display:block;max-width:203px;line-height:0;font-size:0;mso-line-height-rule:exactly;">
                               <picture style="display:block;line-height:0;margin:0;padding:0;"><source type="image/webp" srcset="images/email-02-card-1.webp"><img src="images/email-02-card-1.jpg" width="203" alt="" loading="lazy" decoding="async" style="display:block;border:0;outline:none;text-decoration:none;width:203px;max-width:100%;height:auto;margin:0;padding:0;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:0;" /></picture>
                               <div class="card-badge-nouveau-wrap" style="text-align:right;margin-top:-18px;line-height:0;font-size:0;position:relative;z-index:2;">
-                                <span class="card-badge-nouveau" style="display:inline-block;width:75px;height:18px;line-height:18px;mso-line-height-rule:exactly;text-align:center;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:10px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:14px;border-bottom-left-radius:0;">Nouveau</span>
+                                <span class="card-badge-nouveau" style="display:inline-block;width:75px;height:18px;line-height:18px;mso-line-height-rule:exactly;text-align:center;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:10px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">Nouveau</span>
                               </div>
                             </div>
                           </td>
-                          <td class="stack-column" valign="top" style="padding:8px 0;">
-                            <p style="margin:0 0 8px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;text-align:left;">Fiche outil : Gérer le retour<br>au calme</p>
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 8px 0;">
+                          <td class="stack-column" valign="top" style="padding:8px;">
+                            <p style="margin:0 0 7px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;letter-spacing:0;color:#000000;text-align:left;">Fiche outil : Gérer le retour<br>au calme</p>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 7px 0;">
                               <tr>
                                 <td valign="middle" style="padding:0 4px 0 0;line-height:0;font-size:0;">
                                   <img src="icons/icon-star.png" width="12" height="12" alt="" style="display:block;border:0;outline:none;text-decoration:none;width:12px;height:12px;" loading="lazy" decoding="async" />
@@ -229,13 +229,13 @@
                             <div class="card-thumb" style="display:block;max-width:203px;line-height:0;font-size:0;mso-line-height-rule:exactly;">
                               <picture style="display:block;line-height:0;margin:0;padding:0;"><source type="image/webp" srcset="images/email-02-card-2.webp"><img src="images/email-02-card-2.jpg" width="203" alt="" loading="lazy" decoding="async" style="display:block;border:0;outline:none;text-decoration:none;width:203px;max-width:100%;height:auto;margin:0;padding:0;border-top-left-radius:14px;border-top-right-radius:14px;border-bottom-right-radius:14px;border-bottom-left-radius:0;" /></picture>
                               <div class="card-badge-nouveau-wrap" style="text-align:right;margin-top:-18px;line-height:0;font-size:0;position:relative;z-index:2;">
-                                <span class="card-badge-nouveau" style="display:inline-block;width:75px;height:18px;line-height:18px;mso-line-height-rule:exactly;text-align:center;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:10px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:14px;border-bottom-left-radius:0;">Nouveau</span>
+                                <span class="card-badge-nouveau" style="display:inline-block;width:75px;height:18px;line-height:18px;mso-line-height-rule:exactly;text-align:center;background-color:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:10px;font-weight:800;border-top-left-radius:22px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">Nouveau</span>
                               </div>
                             </div>
                           </td>
-                          <td class="stack-column" valign="top" style="padding:8px 0;">
-                            <p style="margin:0 0 8px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;text-align:left;">Atelier : La boîte à émotions</p>
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 8px 0;">
+                          <td class="stack-column" valign="top" style="padding:8px;">
+                            <p style="margin:0 0 7px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;letter-spacing:0;color:#000000;text-align:left;">Atelier : La boîte à émotions</p>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 7px 0;">
                               <tr>
                                 <td valign="middle" style="padding:0 4px 0 0;line-height:0;font-size:0;">
                                   <img src="icons/icon-star.png" width="12" height="12" alt="" style="display:block;border:0;outline:none;text-decoration:none;width:12px;height:12px;" loading="lazy" decoding="async" />
@@ -249,10 +249,10 @@
                           </td>
                         </tr>
                       </table>
-                <h2 style="margin:0 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;color:#313233;text-align:left;">
+                <h2 style="margin:29px 0 16px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;letter-spacing:0;color:#323233;text-align:left;">
                   Prochains ateliers
                 </h2>
-                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-radius:8px;margin:0 0 16px 0;">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:0;margin:0 0 10px 0;">
                         <tr>
                           <td style="padding:16px 24px;">
                             <p style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;">
@@ -288,7 +288,7 @@
                           </td>
                         </tr>
                       </table>
-                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-radius:8px;margin:0;">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-top-left-radius:22px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:0;margin:0;">
                         <tr>
                           <td style="padding:16px 24px;">
                             <p style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;">
@@ -337,8 +337,8 @@
             <!-- Quote -->
             <tr>
               <td align="center" bgcolor="#F8F3FF" class="mobile-pad" style="background-color:#F8F3FF;padding:60px 66px;">
-                <p style="margin:0 0 12px 0;padding:0;font-family:'Candal',Georgia,'Times New Roman',serif;font-size:53px;line-height:64px;font-weight:400;color:#A47AFF;text-align:center;">"</p>
-                <p style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:26px;line-height:34px;font-weight:500;font-style:italic;color:#5F2EC8;text-align:center;">
+                <p style="margin:0 0 12px 0;padding:0;font-family:'Candal',Georgia,'Times New Roman',serif;font-size:53px;line-height:64px;font-weight:400;letter-spacing:0;color:#A57BFF;text-align:center;">"</p>
+                <p style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:26px;line-height:34px;font-weight:500;letter-spacing:0;color:#5F2EC8;text-align:center;">
                   Comment gérez-vous le retour au calme<br>
                   après la récréation avec une classe très agitée&nbsp;?
                 </p>
@@ -366,7 +366,7 @@
             <tr>
               <td align="center" bgcolor="#FFFFFF" class="mobile-pad" style="background-color:#FFFFFF;padding:32px 35px 32px 32px;">
                 <img src="images/logo-scholavie.png" width="119" height="38" alt="Scholavie" style="display:block;border:0;outline:none;text-decoration:none;margin:0 auto 18px auto;" loading="lazy" decoding="async" />
-                <h2 style="margin:0 0 18px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;color:#313233;text-align:center;">
+                <h2 style="margin:0 0 18px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;letter-spacing:0;color:#323233;text-align:center;">
                   Aller plus loin sur le bien-être à l'école
                 </h2>
                 <p style="margin:0 0 18px 0;padding:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:#231F20;text-align:center;">

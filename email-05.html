@@ -40,7 +40,7 @@
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 300 800;
   font-display: swap;
   src: url(fonts/merriweather-var.woff2) format('woff2');
 }
@@ -62,14 +62,14 @@
     /* Hero scoop: cream block overlaps image; CSS radii only */
     .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; }
     .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
-    .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+    .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; }
 /* Mobile: match Figma fixed 600px prototype (scale, do not reflow) */
     @media only screen and (max-width: 620px) {
       .email-container { width: 600px !important; max-width: 600px !important; }
       .fluid { width: 100% !important; max-width: 600px !important; height: auto !important; }
       .hero-scoop { margin-top: -34px !important; border-top-left-radius: 42px !important; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
       .hero-badge { bottom: 100% !important; top: auto !important; right: 0 !important; }
-      .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+      .hero-img { border-top-left-radius: 24px !important; border-top-right-radius: 24px !important; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; }
     }
   </style>
 </head>
@@ -101,7 +101,7 @@
                   <div style="line-height:0;font-size:0;">
                     <picture>
                       <source type="image/webp" srcset="images/email-05-hero-clean-600.webp">
-                      <img src="images/email-05-hero-clean-600.jpg" width="600" height="380" alt="Équipe dans la salle des professeurs" fetchpriority="high" decoding="async" class="fluid hero-img" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:0;border-bottom-left-radius:0;" />
+                      <img src="images/email-05-hero-clean-600.jpg" width="600" height="380" alt="Équipe dans la salle des professeurs" fetchpriority="high" decoding="async" class="fluid hero-img" style="display:block;border:0;outline:none;text-decoration:none;width:100%;max-width:600px;height:auto;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;" />
                     </picture>
                   </div>
                   <div class="hero-scoop" style="margin-top:-34px;position:relative;z-index:2;background-color:#FFFFF9;border-top-left-radius:42px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;">
@@ -134,7 +134,7 @@
                     </td>
                   </tr>
                 </table>
-                <h1 style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:500;color:#313233;text-align:center;">
+                <h1 style="margin:0 0 12px 0;padding:0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:500;letter-spacing:0;color:#323233;text-align:center;">
                   Bienvenue dans ta nouvelle salle des profs
                 </h1>
                 <p style="margin:0 0 12px 0;padding:0;font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;font-weight:400;color:#231F20;text-align:center;">
@@ -169,39 +169,40 @@
             </tr>
             <tr>
               <td bgcolor="#FFFFFF" class="mobile-pad" style="background-color:#FFFFFF;padding:16px;">
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 16px 0;">
-                  <tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;">&nbsp;</td></tr>
-                </table>
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-top-left-radius:21px;border-top-right-radius:21px;border-bottom-right-radius:21px;border-bottom-left-radius:0;margin:0 0 8px 0;overflow:hidden;">
                         <tr>
-                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px 12px 16px 20px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21px;font-weight:300;color:#000000;text-align:left;">
+                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21.37px;font-weight:300;letter-spacing:0;color:#000000;text-align:left;">
                             Inspire-toi de milliers de<br>ressources testées en classe.
                           </td>
-                          <td valign="middle" align="right" style="padding:16px 20px 16px 8px;">
+                          <td valign="middle" align="right" style="padding:16px;">
                             <img src="images/email-05-school.png" width="43" height="43" alt="" style="display:block;border:0;outline:none;text-decoration:none;" loading="lazy" decoding="async" />
                           </td>
                         </tr>
                       </table>
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-top-left-radius:21px;border-top-right-radius:21px;border-bottom-right-radius:21px;border-bottom-left-radius:0;margin:0 0 8px 0;overflow:hidden;">
                         <tr>
-                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px 12px 16px 20px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21px;font-weight:300;color:#000000;text-align:left;">
+                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21.37px;font-weight:300;letter-spacing:0;color:#000000;text-align:left;">
                             Adapte tes supports aux besoins<br>spécifiques de tes élèves.
                           </td>
-                          <td valign="middle" align="right" style="padding:16px 20px 16px 8px;">
+                          <td valign="middle" align="right" style="padding:16px;">
                             <img src="images/email-05-backpack.png" width="43" height="43" alt="" style="display:block;border:0;outline:none;text-decoration:none;" loading="lazy" decoding="async" />
                           </td>
                         </tr>
                       </table>
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-top-left-radius:21px;border-top-right-radius:21px;border-bottom-right-radius:21px;border-bottom-left-radius:0;margin:0;overflow:hidden;">
                         <tr>
-                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px 12px 16px 20px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21px;font-weight:300;color:#000000;text-align:left;">
+                          <td valign="middle" width="300" style="width:300px;max-width:300px;padding:16px;font-family:'Merriweather',Georgia,serif;font-size:17px;line-height:21.37px;font-weight:300;letter-spacing:0;color:#000000;text-align:left;">
                             Échange avec une communauté qui<br>vit ton quotidien.
                           </td>
-                          <td valign="middle" align="right" style="padding:16px 20px 16px 8px;">
+                          <td valign="middle" align="right" style="padding:16px;">
                             <img src="images/email-05-people.png" width="43" height="43" alt="" style="display:block;border:0;outline:none;text-decoration:none;" loading="lazy" decoding="async" />
                           </td>
                         </tr>
                       </table>
+                <div style="height:31px;line-height:31px;font-size:0;">&nbsp;</div>
+                <table role="presentation" width="482" align="center" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;max-width:100%;">
+                  <tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr>
+                </table>
               </td>
             </tr>
 
