@@ -56,10 +56,11 @@ If using HubSpot Source Code API:
 
 ## Editable modules
 
-- `email_header` — logo / paddings
-- `email_hero` — hero image, badges, heading, body, CTA
-- `email_content_block` — reassurance / incentive / partner
-- `email_resource_card` — newsletter resource rows
+- `email_header` — logo + editable View in browser link
+- `email_hero` — hero image, H1/H2, body, CTA
+- `email_content_block` — rich-text editorial sections + colors
+- `email_resource_card` — thumbnail, title, short text, CTA
+- `email_divider_spacer` — optional divider + adjustable spacing
 - `email_workshop_card` — workshop/event cards
 - `email_quote` — quote CTA
 - `email_lesson_card` — lesson split card

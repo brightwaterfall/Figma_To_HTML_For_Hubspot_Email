@@ -4,11 +4,11 @@
 
 | File | Label |
 |---|---|
-| templates/email-01-survey.html | être PROF — Survey / Feedback |
-| templates/email-02-newsletter.html | être PROF — Newsletter |
-| templates/email-03-lesson.html | être PROF — Lesson Prep |
-| templates/email-04-password.html | être PROF — Password Reset |
-| templates/email-05-welcome.html | être PROF — Welcome |
+| templates/email-01-survey.html | être PROF — Baromètre |
+| templates/email-02-newsletter.html | être PROF — Infolettre |
+| templates/email-03-lesson.html | être PROF — Activation |
+| templates/email-04-password.html | être PROF — Transactionnel |
+| templates/email-05-welcome.html | être PROF — Bienvenue |
 
 ## Modules
 
@@ -18,6 +18,7 @@
 | modules/email_hero.module | Hero / scoop / intro CTA |
 | modules/email_content_block.module | Text sections |
 | modules/email_resource_card.module | Resource cards |
+| modules/email_divider_spacer.module | Divider / adjustable spacing |
 | modules/email_workshop_card.module | Workshop cards |
 | modules/email_quote.module | Quote section |
 | modules/email_lesson_card.module | Lesson card |

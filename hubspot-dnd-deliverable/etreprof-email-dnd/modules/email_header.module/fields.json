@@ -38,6 +38,38 @@
     }
   },
   {
+    "name": "show_view_browser",
+    "label": "Show View in browser link",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "view_browser_text",
+    "label": "View in browser text",
+    "type": "text",
+    "default": "Voir dans le navigateur"
+  },
+  {
+    "name": "view_browser_link",
+    "label": "Custom View in browser URL (optional)",
+    "help_text": "Leave blank to use HubSpot's hosted web-version URL automatically.",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE"
+    ]
+  },
+  {
+    "name": "view_browser_color",
+    "label": "View in browser text color",
+    "type": "color",
+    "default": {
+      "color": "#666666",
+      "opacity": 100
+    }
+  },
+  {
     "name": "background_color",
     "label": "Background",
     "type": "color",

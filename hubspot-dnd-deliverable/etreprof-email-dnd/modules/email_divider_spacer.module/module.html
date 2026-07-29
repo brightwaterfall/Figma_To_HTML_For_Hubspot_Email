@@ -1,0 +1,13 @@
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.space_above }}px {{ module.side_padding }}px {{ module.space_below }}px;">
+      {% if module.show_divider %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td height="{{ module.divider_width }}" style="height:{{ module.divider_width }}px;border-top:{{ module.divider_width }}px solid {{ module.divider_color.color }};font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
+      {% endif %}
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,25 @@
+{
+  "label": "EP Email Divider / Spacer",
+  "global": false,
+  "content_types": [
+    "EMAIL"
+  ],
+  "host_template_types": [
+    "EMAIL"
+  ],
+  "is_available_for_new_content": true,
+  "categories": [
+    "body_content"
+  ],
+  "content_tags": [
+    {
+      "name": "SEPARATORS",
+      "source": "USER"
+    },
+    {
+      "name": "EMAIL",
+      "source": "USER"
+    }
+  ],
+  "inline_help_text": "Editable email-safe spacing with an optional horizontal divider."
+}

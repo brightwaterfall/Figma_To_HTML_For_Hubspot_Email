@@ -1,0 +1,62 @@
+[
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "space_above",
+    "label": "Space above",
+    "type": "number",
+    "default": 16,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "space_below",
+    "label": "Space below",
+    "type": "number",
+    "default": 16,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "side_padding",
+    "label": "Side padding",
+    "type": "number",
+    "default": 40,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "show_divider",
+    "label": "Show divider",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "divider_color",
+    "label": "Divider color",
+    "type": "color",
+    "default": {
+      "color": "#CCCCCC",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "divider_width",
+    "label": "Divider thickness",
+    "type": "number",
+    "default": 1,
+    "min": 1,
+    "max": 8,
+    "step": 1
+  }
+]

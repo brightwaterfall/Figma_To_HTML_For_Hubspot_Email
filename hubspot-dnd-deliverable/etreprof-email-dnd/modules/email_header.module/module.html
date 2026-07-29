@@ -1,12 +1,25 @@
 {% set logo_href = module.logo_link.href|default('https://www.etreprof.fr/', true) %}
+{% set view_browser_href = module.view_browser_link.href|default(view_as_page_url, true) %}
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
   <tr>
-    <td align="center" bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.padding_top }}px 16px {{ module.padding_bottom }}px 16px;text-align:center;">
-      <a href="{{ logo_href|escape_url }}" target="_blank" style="display:inline-block;text-decoration:none;line-height:0;">
-        {% if module.logo.src %}
-        <img src="{{ module.logo.src|escape_url }}" width="{{ module.logo_width }}" alt="{{ module.logo.alt|escape_attr }}" border="0" style="display:block;width:{{ module.logo_width }}px;height:auto;border:0;outline:none;text-decoration:none;margin:0 auto;" />
-        {% endif %}
-      </a>
+    <td bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.padding_top }}px 16px {{ module.padding_bottom }}px 16px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td width="33%" style="width:33%;font-size:0;line-height:0;">&nbsp;</td>
+          <td width="34%" align="center" style="width:34%;text-align:center;">
+            <a href="{{ logo_href|escape_url }}" target="_blank" style="display:inline-block;text-decoration:none;line-height:0;">
+              {% if module.logo.src %}
+              <img src="{{ module.logo.src|escape_url }}" width="{{ module.logo_width }}" alt="{{ module.logo.alt|escape_attr }}" border="0" style="display:block;width:{{ module.logo_width }}px;height:auto;border:0;outline:none;text-decoration:none;margin:0 auto;" />
+              {% endif %}
+            </a>
+          </td>
+          <td width="33%" align="right" style="width:33%;text-align:right;">
+            {% if module.show_view_browser and module.view_browser_text %}
+            <a href="{{ view_browser_href|escape_url }}" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:15px;color:{{ module.view_browser_color.color }};text-decoration:underline;">{{ module.view_browser_text }}</a>
+            {% endif %}
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>

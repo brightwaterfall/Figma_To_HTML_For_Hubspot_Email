@@ -211,6 +211,30 @@
     }
   },
   {
+    "name": "subheading",
+    "label": "Subheading (H2)",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "subheading_color",
+    "label": "Subheading color",
+    "type": "color",
+    "default": {
+      "color": "#313233",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "subheading_size",
+    "label": "Subheading size",
+    "type": "number",
+    "default": 22,
+    "min": 14,
+    "max": 32,
+    "step": 1
+  },
+  {
     "name": "show_personalized_greeting",
     "label": "Show personalized greeting",
     "type": "boolean",

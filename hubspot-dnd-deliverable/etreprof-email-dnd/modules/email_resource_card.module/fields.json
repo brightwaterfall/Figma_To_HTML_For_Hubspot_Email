@@ -95,5 +95,36 @@
     "label": "Description",
     "type": "richtext",
     "default": "<p>Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.</p>"
+  },
+  {
+    "name": "cta_text",
+    "label": "CTA text",
+    "type": "text",
+    "default": "Découvrir la ressource"
+  },
+  {
+    "name": "cta_link",
+    "label": "CTA link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "cta_color",
+    "label": "CTA color",
+    "type": "color",
+    "default": {
+      "color": "#5F2EC8",
+      "opacity": 100
+    }
   }
 ]
