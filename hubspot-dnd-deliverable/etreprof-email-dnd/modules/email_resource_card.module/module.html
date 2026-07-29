@@ -26,7 +26,7 @@
             </table>
             {% endif %}
             <div style="font-family:'Assistant',Arial,sans-serif;font-size:12px;line-height:14px;color:#000000;">{{ module.description }}</div>
-            {% if module.cta_text %}
+            {% if module.show_cta and module.cta_text %}
             <p style="margin:9px 0 0 0;font-family:'Assistant',Arial,sans-serif;font-size:12px;line-height:16px;font-weight:700;">
               <a href="{{ cta_href|escape_url }}" target="_blank" style="color:{{ module.cta_color.color }};text-decoration:underline;">{{ module.cta_text }}</a>
             </p>

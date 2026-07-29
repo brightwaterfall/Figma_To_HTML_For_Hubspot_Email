@@ -12,7 +12,7 @@
     "responsive": true,
     "resizable": true,
     "default": {
-      "src": "{{ get_asset_url('../images/email-01-hero-clean-600.jpg') }}",
+      "src": "",
       "alt": "Hero",
       "width": 600,
       "height": 380
@@ -353,6 +353,24 @@
     "default": 28,
     "min": 0,
     "max": 120,
+    "step": 1
+  },
+  {
+    "name": "note_color",
+    "label": "Note color",
+    "type": "color",
+    "default": {
+      "color": "#A6A6A6",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "overlap_amount",
+    "label": "Scoop overlap (px)",
+    "type": "number",
+    "default": 34,
+    "min": 0,
+    "max": 80,
     "step": 1
   }
 ]

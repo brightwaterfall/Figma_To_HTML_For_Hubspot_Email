@@ -10,7 +10,15 @@
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:24px auto 0 auto;">
         <tr>
           <td bgcolor="{{ module.button_color.color }}" style="background-color:{{ module.button_color.color }};border-radius:22px 22px 22px 0;">
-            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;">{{ module.cta_text }}</a>
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ cta_href|escape_url }}" style="height:47px;v-text-anchor:middle;width:{{ module.cta_vml_width|default(311, true) }}px;" arcsize="50%" strokecolor="{{ module.button_color.color }}" fillcolor="{{ module.button_color.color }}">
+              <w:anchorlock/>
+              <center style="color:#FFFFFF;font-family:Georgia,serif;font-size:18px;font-weight:400;">{{ module.cta_text }}</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;mso-hide:all;">{{ module.cta_text }}</a>
+            <!--<![endif]-->
           </td>
         </tr>
       </table>

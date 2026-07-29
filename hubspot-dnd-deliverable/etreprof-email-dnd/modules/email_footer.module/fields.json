@@ -21,13 +21,13 @@
     "name": "custom_line_1",
     "label": "Custom line 1",
     "type": "text",
-    "default": ""
+    "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     "name": "custom_line_2",
     "label": "Custom line 2",
     "type": "text",
-    "default": ""
+    "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
     "name": "social_links",
@@ -47,7 +47,7 @@
         "responsive": true,
         "resizable": true,
         "default": {
-          "src": "{{ get_asset_url('../icons/icon-instagram.png') }}",
+          "src": "",
           "alt": "Instagram",
           "width": 24,
           "height": 24
@@ -82,7 +82,7 @@
     "default": [
       {
         "icon": {
-          "src": "{{ get_asset_url('../icons/icon-instagram.png') }}",
+          "src": "",
           "alt": "Instagram",
           "width": 24,
           "height": 24
@@ -96,7 +96,7 @@
       },
       {
         "icon": {
-          "src": "{{ get_asset_url('../icons/icon-facebook.png') }}",
+          "src": "",
           "alt": "Facebook",
           "width": 24,
           "height": 24
@@ -110,7 +110,7 @@
       },
       {
         "icon": {
-          "src": "{{ get_asset_url('../icons/icon-x.png') }}",
+          "src": "",
           "alt": "X",
           "width": 20,
           "height": 20
@@ -124,7 +124,7 @@
       },
       {
         "icon": {
-          "src": "{{ get_asset_url('../icons/icon-youtube.png') }}",
+          "src": "",
           "alt": "YouTube",
           "width": 24,
           "height": 24

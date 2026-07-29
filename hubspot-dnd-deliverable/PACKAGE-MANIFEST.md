@@ -31,5 +31,8 @@
 ## Notes
 
 - Default visual content matches the approved flat HTML emails.
+- Hero scoop overlap + badge seam restored to match Figma flats.
 - DnD email grid minimum width is 624px; original 600px content is centered inside.
-- Final portal preview/test is still required by the client.
+- Resource/workshop/feature card CTAs are available but off by default (match approved design).
+- Final portal preview/test is still required by the client after `hs cms upload`.
+- Password reset CTA URL must be replaced with the live HubSpot reset link before send.

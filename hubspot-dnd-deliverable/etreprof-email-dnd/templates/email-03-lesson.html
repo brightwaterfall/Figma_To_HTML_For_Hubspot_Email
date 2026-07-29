@@ -51,6 +51,8 @@
       path="../modules/email_header.module",
       offset=0,
       width=12,
+      logo={"src": "{{ get_asset_url('../images/logo-etreprof.png') }}", "alt": "être PROF", "width": 48, "height": 51},
+      show_view_browser=True,
       padding_top=29,
       padding_bottom=26
       %}
@@ -91,7 +93,11 @@
       {% dnd_module
       path="../modules/email_lesson_card.module",
       offset=0,
-      width=12
+      width=12,
+      card_image={"src": "{{ get_asset_url('../images/email-03-card-1.jpg') }}", "alt": "Séance système solaire", "width": 203},
+      rating_icon={"src": "{{ get_asset_url('../icons/icon-star.png') }}", "alt": "", "width": 12, "height": 12},
+      title="Séance : Découvrir le<br>système solaire",
+      show_cta=False
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}
@@ -109,10 +115,25 @@
   {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
     {% dnd_column offset=0, width=12 %}
       {% dnd_module
+      path="../modules/email_divider_spacer.module",
+      offset=0,
+      width=12,
+      space_above=8,
+      space_below=8,
+      side_padding=40,
+      show_divider=True
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
       path="../modules/email_cta.module",
       offset=0,
       width=12,
       cta_text="Préparer ma séance",
+      cta_link={"type": "EXTERNAL", "href": "https://www.etreprof.fr/", "content_id": null},
       note="Rejoins les 15 000 profs qui ont déjà préparé leur semaine.",
       vml_width=213
       %}
@@ -125,7 +146,15 @@
       path="../modules/email_footer.module",
       offset=0,
       width=12,
-      padding=32
+      padding=32,
+      custom_line_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      custom_line_2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      social_links=[
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-instagram.png') }}", "alt": "Instagram", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.instagram.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-facebook.png') }}", "alt": "Facebook", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.facebook.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-x.png') }}", "alt": "X", "width": 20, "height": 20}, "link": {"type": "EXTERNAL", "href": "https://x.com/", "content_id": null}, "width": 20},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-youtube.png') }}", "alt": "YouTube", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.youtube.com/", "content_id": null}, "width": 24}
+      ],
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}

@@ -100,10 +100,43 @@
     "default": ""
   },
   {
+    "name": "eyebrow_style",
+    "label": "Eyebrow style",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "Plain text",
+        "value": "text"
+      },
+      {
+        "label": "Outline chip (linked)",
+        "value": "outline"
+      }
+    ],
+    "display": "select",
+    "default": "text"
+  },
+  {
+    "name": "eyebrow_link",
+    "label": "Eyebrow link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
     "name": "heading",
     "label": "Heading",
-    "type": "text",
-    "default": "Pourquoi votre participation est essentielle ?"
+    "type": "richtext",
+    "default": "<p>Pourquoi votre participation est essentielle ?</p>"
   },
   {
     "name": "heading_color",

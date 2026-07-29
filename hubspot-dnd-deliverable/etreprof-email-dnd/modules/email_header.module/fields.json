@@ -6,7 +6,7 @@
     "responsive": true,
     "resizable": true,
     "default": {
-      "src": "{{ get_asset_url('../images/logo-etreprof.png') }}",
+      "src": "",
       "alt": "être PROF",
       "width": 48,
       "height": 51

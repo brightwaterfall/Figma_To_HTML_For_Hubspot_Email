@@ -12,8 +12,22 @@ Official constraints used:
 - Exactly **one** `dnd_area` per email template
 - Custom modules with `content_types: ["EMAIL"]`
 - No `module.css` / `module.js` for email modules
-- Required CAN-SPAM tokens in footer
+- Required CAN-SPAM tokens in footer (French copy)
 - Preview text field in each template
+- Image defaults in `fields.json` are empty (portable); templates wire assets via `get_asset_url`
+
+## Client-required editable fields
+
+| Module | Editable |
+|---|---|
+| Header | Logo image + View in browser link |
+| Hero | Main image, H1, H2, paragraph, CTA text + URL |
+| Editorial | Rich text title/body + font colors (+ optional outline chip) |
+| Resource card | Thumbnail, title, short text, optional CTA |
+| Divider/Spacer | Spacing + optional line |
+| Footer | Social URLs + HubSpot unsubscribe/address tokens |
+
+All five templates (Baromètre, Infolettre, Activation, Bienvenue, Transactionnel) are pre-wired with these modules inside one DnD area.
 
 ## Requirements
 

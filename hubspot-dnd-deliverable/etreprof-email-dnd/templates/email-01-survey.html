@@ -51,6 +51,9 @@
       path="../modules/email_header.module",
       offset=0,
       width=12,
+      logo={"src": "{{ get_asset_url('../images/logo-etreprof.png') }}", "alt": "être PROF", "width": 48, "height": 51},
+      show_view_browser=True,
+      view_browser_text="Voir dans le navigateur",
       padding_top=29,
       padding_bottom=26
       %}
@@ -68,6 +71,8 @@
       heading="On construit la suite avec toi.",
       body="<p>Tu utilises ÊtrePROF au quotidien. Pour que la plateforme réponde vraiment à tes réalités de terrain, nous avons besoin de ton retour. Tes réponses guideront nos prochaines nouveautés.</p>",
       cta_text="Je donne mon avis",
+      cta_link={"type": "EXTERNAL", "href": "https://www.etreprof.fr/", "content_id": null},
+      show_cta=True,
       note="Promis, cela te prendra moins de 2 minutes.",
       signature="<p>Merci pour ton aide précieuse,<br><strong>L'équipe ÊtrePROF</strong></p>",
       show_personalized_greeting=False,
@@ -82,7 +87,7 @@
       path="../modules/email_content_block.module",
       offset=0,
       width=12,
-      heading="Pourquoi votre participation<br>est essentielle&nbsp;?",
+      heading="<p>Pourquoi votre participation<br>est essentielle&nbsp;?</p>",
       body="<p>Vos réponses font avancer une cause commune&nbsp;: mieux comprendre les besoins du terrain pour faire évoluer les solutions utiles à toute la communauté éducative.</p>",
       action_text="En savoir plus sur la démarche →",
       show_top_divider=True,
@@ -94,11 +99,27 @@
   {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
     {% dnd_column offset=0, width=12 %}
       {% dnd_module
+      path="../modules/email_divider_spacer.module",
+      offset=0,
+      width=12,
+      space_above=8,
+      space_below=8,
+      side_padding=40,
+      show_divider=True
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
       path="../modules/email_content_block.module",
       offset=0,
       width=12,
       eyebrow="À DÉCOUVRIR",
-      heading="Un petit plus pour vous remercier",
+      eyebrow_style="outline",
+      eyebrow_link={"type": "EXTERNAL", "href": "https://www.etreprof.fr/", "content_id": null},
+      heading="<p>Un petit plus pour vous remercier</p>",
       body="<p>Module à activer uniquement lorsqu'un avantage est proposé. Vocabulaire volontairement sobre pour préserver la délivrabilité.</p>",
       action_text="",
       show_top_divider=False,
@@ -117,7 +138,15 @@
       path="../modules/email_footer.module",
       offset=0,
       width=12,
-      padding=32
+      padding=32,
+      custom_line_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      custom_line_2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      social_links=[
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-instagram.png') }}", "alt": "Instagram", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.instagram.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-facebook.png') }}", "alt": "Facebook", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.facebook.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-x.png') }}", "alt": "X", "width": 20, "height": 20}, "link": {"type": "EXTERNAL", "href": "https://x.com/", "content_id": null}, "width": 20},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-youtube.png') }}", "alt": "YouTube", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.youtube.com/", "content_id": null}, "width": 24}
+      ],
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}

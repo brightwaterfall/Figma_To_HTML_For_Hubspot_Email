@@ -1,6 +1,7 @@
+{% set cta_href = module.cta_link.href|default('https://www.etreprof.fr/', true) %}
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
   <tr>
-    <td bgcolor="#F8F3FF" style="background-color:#F8F3FF;padding:29px 80px;">
+    <td bgcolor="{{ module.background_color.color|default('#F8F3FF', true) }}" style="background-color:{{ module.background_color.color|default('#F8F3FF', true) }};padding:29px 80px;">
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td width="203" valign="top" style="width:203px;padding-right:18px;">{% if module.card_image.src %}<img src="{{ module.card_image.src|escape_url }}" width="203" alt="{{ module.card_image.alt|escape_attr }}" style="display:block;width:203px;max-width:100%;height:auto;border:0;border-radius:14px 14px 14px 0;" />{% endif %}</td>
@@ -8,7 +9,17 @@
             <h2 style="margin:0 0 8px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:25px;font-weight:500;color:#000000;">{{ module.title }}</h2>
             <div style="font-family:'Assistant',Arial,sans-serif;font-size:12px;line-height:14px;color:#000000;">{{ module.description }}</div>
             <p style="margin:8px 0;font-family:'Inter',Arial,sans-serif;font-size:13px;line-height:16px;font-weight:700;color:#FFFFFF;"><span style="display:inline-block;padding:4px 12px;background:#5F2EC8;border-radius:14px 14px 14px 0;">{{ module.tag_1 }}</span>&nbsp;&nbsp;<span style="display:inline-block;padding:4px 12px;background:#5F2EC8;border-radius:14px 14px 14px 0;">{{ module.tag_2 }}</span></p>
-            <p style="margin:0;padding-top:8px;border-top:1px solid #CCCCCC;font-family:'Assistant',Arial,sans-serif;font-size:10px;line-height:13px;font-weight:600;color:#000000;">{{ module.approval_text }}</p>
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0;padding-top:8px;border-top:1px solid #CCCCCC;">
+              <tr>
+                {% if module.rating_icon.src %}<td width="16" style="width:16px;padding-right:4px;"><img src="{{ module.rating_icon.src|escape_url }}" width="12" alt="{{ module.rating_icon.alt|escape_attr }}" style="display:block;width:12px;height:auto;border:0;" /></td>{% endif %}
+                <td style="font-family:'Assistant',Arial,sans-serif;font-size:10px;line-height:13px;font-weight:600;color:#000000;">{{ module.approval_text }}</td>
+              </tr>
+            </table>
+            {% if module.show_cta and module.cta_text %}
+            <p style="margin:10px 0 0 0;font-family:'Assistant',Arial,sans-serif;font-size:13px;line-height:16px;font-weight:700;">
+              <a href="{{ cta_href|escape_url }}" target="_blank" style="color:{{ module.cta_color.color }};text-decoration:underline;">{{ module.cta_text }}</a>
+            </p>
+            {% endif %}
           </td>
         </tr>
       </table>

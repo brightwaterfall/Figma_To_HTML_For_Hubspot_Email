@@ -1,12 +1,21 @@
 [
   {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#F8F3FF",
+      "opacity": 100
+    }
+  },
+  {
     "name": "card_image",
     "label": "Card image",
     "type": "image",
     "responsive": true,
     "resizable": true,
     "default": {
-      "src": "{{ get_asset_url('../images/email-03-card-1.jpg') }}",
+      "src": "",
       "alt": "Séance système solaire",
       "width": 203
     }
@@ -40,5 +49,55 @@
     "label": "Approval text",
     "type": "text",
     "default": "Approuvé par 120 profs de la communauté"
+  },
+  {
+    "name": "rating_icon",
+    "label": "Rating icon",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "",
+      "alt": "Star",
+      "width": 12,
+      "height": 12
+    }
+  },
+  {
+    "name": "show_cta",
+    "label": "Show CTA",
+    "type": "boolean",
+    "default": false
+  },
+  {
+    "name": "cta_text",
+    "label": "CTA text",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "cta_link",
+    "label": "CTA link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "cta_color",
+    "label": "CTA color",
+    "type": "color",
+    "default": {
+      "color": "#5F2EC8",
+      "opacity": 100
+    }
   }
 ]

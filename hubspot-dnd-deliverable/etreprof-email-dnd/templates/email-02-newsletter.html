@@ -51,6 +51,9 @@
       path="../modules/email_header.module",
       offset=0,
       width=12,
+      logo={"src": "{{ get_asset_url('../images/logo-etreprof.png') }}", "alt": "être PROF", "width": 48, "height": 51},
+      show_view_browser=True,
+      view_browser_text="Voir dans le navigateur",
       padding_top=29,
       padding_bottom=23
       %}
@@ -74,6 +77,8 @@
       show_personalized_greeting=True,
       body="<p>découvre les nouvelles thématiques de la semaine. On met le cap sur l'inclusion et les rituels de transition pour apaiser tes journées.</p>",
       cta_text="Découvrir la sélection",
+      cta_link={"type": "EXTERNAL", "href": "https://www.etreprof.fr/", "content_id": null},
+      show_cta=True,
       note="",
       signature="",
       show_divider=True,
@@ -96,7 +101,10 @@
       show_new_badge=True,
       title="Fiche outil : Gérer le retour<br>au calme",
       approval_text="Approuvé par 45&nbsp;profs",
-      description="<p>Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.</p>"
+      description="<p>Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.</p>",
+      show_cta=False,
+      cta_text="",
+      rating_icon={"src": "{{ get_asset_url('../icons/icon-star.png') }}", "alt": "", "width": 12, "height": 12}
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}
@@ -112,7 +120,24 @@
       show_new_badge=False,
       title="Atelier : La boîte à émotions",
       approval_text="Approuvé par 28&nbsp;profs",
-      description="<p>Des cartes prêtes à imprimer pour aider les élèves à verbaliser leurs ressentis dès le rituel du matin.</p>"
+      description="<p>Des cartes prêtes à imprimer pour aider les élèves à verbaliser leurs ressentis dès le rituel du matin.</p>",
+      show_cta=False,
+      cta_text="",
+      rating_icon={"src": "{{ get_asset_url('../icons/icon-star.png') }}", "alt": "", "width": 12, "height": 12}
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_divider_spacer.module",
+      offset=0,
+      width=12,
+      space_above=8,
+      space_below=8,
+      side_padding=40,
+      show_divider=True
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}
@@ -124,6 +149,8 @@
       offset=0,
       width=12,
       section_heading="Prochains ateliers",
+      avatar={"src": "{{ get_asset_url('../images/email-02-avatar.png') }}", "alt": "Mickaël Bertrand", "width": 38, "height": 38},
+      show_cta=False,
       bottom_gap=24
       %}
       {% end_dnd_module %}
@@ -136,6 +163,8 @@
       offset=0,
       width=12,
       section_heading="",
+      avatar={"src": "{{ get_asset_url('../images/email-02-avatar.png') }}", "alt": "Mickaël Bertrand", "width": 38, "height": 38},
+      show_cta=False,
       bottom_gap=0
       %}
       {% end_dnd_module %}
@@ -178,7 +207,15 @@
       path="../modules/email_footer.module",
       offset=0,
       width=12,
-      padding=32
+      padding=32,
+      custom_line_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      custom_line_2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      social_links=[
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-instagram.png') }}", "alt": "Instagram", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.instagram.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-facebook.png') }}", "alt": "Facebook", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.facebook.com/", "content_id": null}, "width": 24},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-x.png') }}", "alt": "X", "width": 20, "height": 20}, "link": {"type": "EXTERNAL", "href": "https://x.com/", "content_id": null}, "width": 20},
+        {"icon": {"src": "{{ get_asset_url('../icons/icon-youtube.png') }}", "alt": "YouTube", "width": 24, "height": 24}, "link": {"type": "EXTERNAL", "href": "https://www.youtube.com/", "content_id": null}, "width": 24}
+      ],
       %}
       {% end_dnd_module %}
     {% end_dnd_column %}

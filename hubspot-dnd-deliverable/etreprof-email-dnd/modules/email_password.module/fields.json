@@ -53,5 +53,14 @@
     "label": "Security note",
     "type": "richtext",
     "default": "<p>Si tu n'es pas à l'origine de cette demande, ignore simplement cet e-mail.<br>Ton compte reste sécurisé.</p>"
+  },
+  {
+    "name": "cta_vml_width",
+    "label": "Outlook CTA width",
+    "type": "number",
+    "default": 311,
+    "min": 120,
+    "max": 420,
+    "step": 1
   }
 ]

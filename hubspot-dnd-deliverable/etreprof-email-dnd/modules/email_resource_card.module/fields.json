@@ -48,7 +48,7 @@
     "responsive": true,
     "resizable": true,
     "default": {
-      "src": "{{ get_asset_url('../images/email-02-card-1.jpg') }}",
+      "src": "",
       "alt": "",
       "width": 203
     }
@@ -78,7 +78,7 @@
     "responsive": true,
     "resizable": true,
     "default": {
-      "src": "{{ get_asset_url('../icons/icon-star.png') }}",
+      "src": "",
       "alt": "",
       "width": 12,
       "height": 12
@@ -100,7 +100,7 @@
     "name": "cta_text",
     "label": "CTA text",
     "type": "text",
-    "default": "Découvrir la ressource"
+    "default": ""
   },
   {
     "name": "cta_link",
@@ -126,5 +126,11 @@
       "color": "#5F2EC8",
       "opacity": 100
     }
+  },
+  {
+    "name": "show_cta",
+    "label": "Show CTA",
+    "type": "boolean",
+    "default": false
   }
 ]
