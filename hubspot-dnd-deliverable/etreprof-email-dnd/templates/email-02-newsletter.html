@@ -1,0 +1,195 @@
+<!--
+  templateType: email
+  isAvailableForNewContent: true
+  label: être PROF — Newsletter
+  enableDomainStylesheets: false
+-->
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>être PROF — Newsletter</title>
+  {{ email_header_includes }}
+  {{ dnd_area_stylesheet }}
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Candal&family=Inter:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style type="text/css">
+    body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; }
+    img { -ms-interpolation-mode:bicubic; border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+    body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#F3F3E9; }
+    #preview_text { display:none !important; }
+  </style>
+</head>
+<body width="100%" style="margin:0;padding:0;background-color:#F3F3E9;">
+  <div id="preview_text" style="display:none!important;">{% text "preview_text" label="Preview Text", value="L'essentiel pour ta classe", no_wrapper=True %}</div>
+  <center role="article" aria-roledescription="email" lang="fr" style="width:100%;background-color:#F3F3E9;">
+    <!--[if mso]>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="624" align="center"><tr><td>
+    <![endif]-->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:624px;margin:0 auto;background-color:#FFFFFF;">
+      <tr>
+        <td align="center" style="padding:0;">
+{% dnd_area "main_email_area", label="Email content", full_width=false %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_header.module",
+      offset=0,
+      width=12,
+      padding_top=29,
+      padding_bottom=23
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_hero.module",
+      offset=0,
+      width=12,
+      hero_image={"src": "{{ get_asset_url('../images/email-02-hero-clean-600.jpg') }}", "alt": "Enfants jouant avec des blocs", "width": 600, "height": 380},
+      badge_text="Spécial Inclusion",
+      secondary_badge_text="Maternelle",
+      badge_background={"color": "#F8F3FF", "opacity": 100},
+      badge_text_color={"color": "#5F2EC8", "opacity": 100},
+      badge_font_size=14,
+      heading="L'essentiel pour ta classe",
+      heading_weight=600,
+      show_personalized_greeting=True,
+      body="<p>découvre les nouvelles thématiques de la semaine. On met le cap sur l'inclusion et les rituels de transition pour apaiser tes journées.</p>",
+      cta_text="Découvrir la sélection",
+      note="",
+      signature="",
+      show_divider=True,
+      padding_top=37,
+      padding_sides=61,
+      padding_bottom=29,
+      cta_vml_width=233
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_resource_card.module",
+      offset=0,
+      width=12,
+      section_heading="Les ressources à la une",
+      card_image={"src": "{{ get_asset_url('../images/email-02-card-1.jpg') }}", "alt": "", "width": 203},
+      show_new_badge=True,
+      title="Fiche outil : Gérer le retour<br>au calme",
+      approval_text="Approuvé par 45&nbsp;profs",
+      description="<p>Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.</p>"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_resource_card.module",
+      offset=0,
+      width=12,
+      section_heading="",
+      card_image={"src": "{{ get_asset_url('../images/email-02-card-2.jpg') }}", "alt": "", "width": 203},
+      show_new_badge=False,
+      title="Atelier : La boîte à émotions",
+      approval_text="Approuvé par 28&nbsp;profs",
+      description="<p>Des cartes prêtes à imprimer pour aider les élèves à verbaliser leurs ressentis dès le rituel du matin.</p>"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_workshop_card.module",
+      offset=0,
+      width=12,
+      section_heading="Prochains ateliers",
+      bottom_gap=24
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_workshop_card.module",
+      offset=0,
+      width=12,
+      section_heading="",
+      bottom_gap=0
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_quote.module",
+      offset=0,
+      width=12
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_content_block.module",
+      offset=0,
+      width=12,
+      logo={"src": "{{ get_asset_url('../images/logo-scholavie.png') }}", "alt": "Scholavie", "width": 119, "height": 38},
+      logo_width=119,
+      heading="Aller plus loin sur le bien-être à l'école",
+      heading_color={"color": "#313233", "opacity": 100},
+      body="<p>Dans le prolongement de cet article, Scholavie propose des ressources complémentaires pour accompagner vos élèves.</p>",
+      body_color={"color": "#231F20", "opacity": 100},
+      action_text="Découvrir les ressources →",
+      show_top_divider=False,
+      padding_top=32,
+      padding_sides=35,
+      padding_bottom=32
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_footer.module",
+      offset=0,
+      width=12,
+      padding=32
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
+        </td>
+      </tr>
+    </table>
+    <!--[if mso]>
+    </td></tr></table>
+    <![endif]-->
+  </center>
+</body>
+</html>

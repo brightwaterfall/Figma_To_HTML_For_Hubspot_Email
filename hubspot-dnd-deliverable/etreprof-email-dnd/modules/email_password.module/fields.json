@@ -1,0 +1,57 @@
+[
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "Nouveau mot de passe"
+  },
+  {
+    "name": "show_personalized_greeting",
+    "label": "Show personalized greeting",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "body",
+    "label": "Body",
+    "type": "richtext",
+    "default": "<p>tu as demandé à réinitialiser ton mot de passe. Clique sur le bouton ci-dessous pour en créer un nouveau et retrouver ton espace de préparation.</p>"
+  },
+  {
+    "name": "cta_text",
+    "label": "CTA text",
+    "type": "text",
+    "default": "Réinitialiser mon mot de passe"
+  },
+  {
+    "name": "cta_link",
+    "label": "Reset link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "button_color",
+    "label": "Button color",
+    "type": "color",
+    "default": {
+      "color": "#9A69E9",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "security_note",
+    "label": "Security note",
+    "type": "richtext",
+    "default": "<p>Si tu n'es pas à l'origine de cette demande, ignore simplement cet e-mail.<br>Ton compte reste sécurisé.</p>"
+  }
+]

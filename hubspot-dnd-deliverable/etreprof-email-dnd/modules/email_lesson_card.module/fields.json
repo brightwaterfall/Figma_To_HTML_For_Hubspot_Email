@@ -1,0 +1,44 @@
+[
+  {
+    "name": "card_image",
+    "label": "Card image",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../images/email-03-card-1.jpg') }}",
+      "alt": "Séance système solaire",
+      "width": 203
+    }
+  },
+  {
+    "name": "title",
+    "label": "Title",
+    "type": "text",
+    "default": "Séance : Découvrir le système solaire"
+  },
+  {
+    "name": "description",
+    "label": "Description",
+    "type": "richtext",
+    "default": "<p>De la Terre à Neptune : 3 séances interactives pour modéliser le système solaire et captiver ta classe.</p>"
+  },
+  {
+    "name": "tag_1",
+    "label": "Tag 1",
+    "type": "text",
+    "default": "Cycle 3"
+  },
+  {
+    "name": "tag_2",
+    "label": "Tag 2",
+    "type": "text",
+    "default": "Sciences"
+  },
+  {
+    "name": "approval_text",
+    "label": "Approval text",
+    "type": "text",
+    "default": "Approuvé par 120 profs de la communauté"
+  }
+]

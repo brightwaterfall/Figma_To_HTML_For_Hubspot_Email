@@ -1,0 +1,67 @@
+[
+  {
+    "name": "logo",
+    "label": "Logo",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../images/logo-etreprof.png') }}",
+      "alt": "être PROF",
+      "width": 48,
+      "height": 51
+    }
+  },
+  {
+    "name": "logo_width",
+    "label": "Logo width",
+    "type": "number",
+    "default": 48,
+    "min": 24,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "logo_link",
+    "label": "Logo link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "padding_top",
+    "label": "Padding top",
+    "type": "number",
+    "default": 29,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_bottom",
+    "label": "Padding bottom",
+    "type": "number",
+    "default": 26,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  }
+]

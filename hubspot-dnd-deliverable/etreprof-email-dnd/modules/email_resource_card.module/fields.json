@@ -1,0 +1,99 @@
+[
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFF9",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "padding_top",
+    "label": "Padding top",
+    "type": "number",
+    "default": 0,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_sides",
+    "label": "Padding sides",
+    "type": "number",
+    "default": 61,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_bottom",
+    "label": "Padding bottom",
+    "type": "number",
+    "default": 16,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "section_heading",
+    "label": "Optional section heading",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "card_image",
+    "label": "Card image",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../images/email-02-card-1.jpg') }}",
+      "alt": "",
+      "width": 203
+    }
+  },
+  {
+    "name": "show_new_badge",
+    "label": "Show Nouveau badge",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "badge_text",
+    "label": "Badge text",
+    "type": "text",
+    "default": "Nouveau"
+  },
+  {
+    "name": "title",
+    "label": "Title",
+    "type": "text",
+    "default": "Fiche outil : Gérer le retour au calme"
+  },
+  {
+    "name": "rating_icon",
+    "label": "Rating icon",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../icons/icon-star.png') }}",
+      "alt": "",
+      "width": 12,
+      "height": 12
+    }
+  },
+  {
+    "name": "approval_text",
+    "label": "Approval text",
+    "type": "text",
+    "default": "Approuvé par 45 profs"
+  },
+  {
+    "name": "description",
+    "label": "Description",
+    "type": "richtext",
+    "default": "<p>Une méthode clé en main pour capter l'attention de tes élèves après la récréation, sans avoir à hausser le ton.</p>"
+  }
+]

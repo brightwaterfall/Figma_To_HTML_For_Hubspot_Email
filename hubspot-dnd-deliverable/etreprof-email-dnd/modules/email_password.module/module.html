@@ -1,0 +1,26 @@
+{% set cta_href = module.cta_link.href|default('https://www.etreprof.fr/', true) %}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:32px 66px 24px 66px;text-align:center;">
+      <h1 style="margin:0 0 12px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:500;color:#313233;">{{ module.heading }}</h1>
+      {% if module.show_personalized_greeting %}
+      <p style="margin:0 0 8px 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:24px;color:#231F20;">Bonjour {{ contact.firstname|default('Prénom') }},</p>
+      {% endif %}
+      <div style="font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:24px;color:#231F20;">{{ module.body }}</div>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:24px auto 0 auto;">
+        <tr>
+          <td bgcolor="{{ module.button_color.color }}" style="background-color:{{ module.button_color.color }};border-radius:22px 22px 22px 0;">
+            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;">{{ module.cta_text }}</a>
+          </td>
+        </tr>
+      </table>
+      <div style="height:24px;line-height:24px;font-size:0;">&nbsp;</div>
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;">&nbsp;</td></tr></table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:0 32px 32px 32px;">
+      <div style="font-family:'Assistant',Arial,sans-serif;font-size:14px;line-height:21px;font-weight:300;color:#231F20;text-align:center;">{{ module.security_note }}</div>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,29 @@
+{
+  "label": "EP Email Workshop Card",
+  "global": false,
+  "content_types": [
+    "EMAIL"
+  ],
+  "host_template_types": [
+    "EMAIL"
+  ],
+  "is_available_for_new_content": true,
+  "categories": [
+    "body_content"
+  ],
+  "content_tags": [
+    {
+      "name": "TEXT",
+      "source": "USER"
+    },
+    {
+      "name": "IMAGE",
+      "source": "USER"
+    },
+    {
+      "name": "EMAIL",
+      "source": "USER"
+    }
+  ],
+  "inline_help_text": "Email-safe editable module. Prefer short text and hosted images."
+}

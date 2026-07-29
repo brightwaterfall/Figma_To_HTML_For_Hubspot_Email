@@ -1,0 +1,31 @@
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="#FFFFF9" style="background-color:#FFFFF9;padding:0 {{ module.side_padding }}px {{ module.bottom_gap }}px {{ module.side_padding }}px;">
+      {% if module.section_heading %}
+      <h2 style="margin:0 0 28px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;color:#313233;text-align:left;">{{ module.section_heading }}</h2>
+      {% endif %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#F8F3FF;border-radius:22px 22px 22px 0;">
+        <tr>
+          <td style="padding:16px 24px;">
+            <h3 style="margin:0 0 12px 0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;">{{ module.title }}</h3>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 12px 0;">
+              <tr>
+                {% if module.avatar.src %}<td width="38" style="width:38px;padding-right:10px;"><img src="{{ module.avatar.src|escape_url }}" width="38" alt="{{ module.avatar.alt|escape_attr }}" style="display:block;width:38px;height:38px;border:0;border-radius:50%;" /></td>{% endif %}
+                <td style="font-family:'Assistant',Arial,sans-serif;font-size:10px;line-height:11px;color:#000000;">{{ module.presenter }}<br>{{ module.presenter_role }}</td>
+              </tr>
+            </table>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td><span style="display:inline-block;padding:3px 12px;background:#5F2EC8;color:#FFFFFF;font-family:'Assistant',Arial,sans-serif;font-size:13px;line-height:17px;font-weight:700;border-radius:14px 14px 14px 0;">{{ module.time }}</span></td>
+                <td width="9">&nbsp;</td>
+                <td><span style="display:inline-block;padding:3px 18px;background:#5F2EC8;color:#FFFFFF;font-family:'Assistant',Arial,sans-serif;font-size:13px;line-height:17px;font-weight:700;border-radius:14px 14px 14px 0;">{{ module.date }}</span></td>
+                <td width="9">&nbsp;</td>
+                <td><span style="display:inline-block;padding:2px 12px;color:#5F2EC8;font-family:'Assistant',Arial,sans-serif;font-size:13px;line-height:17px;font-weight:700;border:1px solid #5F2EC8;border-radius:14px 14px 14px 0;">{{ module.location }}</span></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

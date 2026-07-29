@@ -1,0 +1,33 @@
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.padding_top }}px {{ module.padding_sides }}px {{ module.padding_bottom }}px;">
+      {% if module.section_heading %}
+      <h2 style="margin:0 0 16px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:28px;font-weight:600;color:#313233;text-align:left;">{{ module.section_heading }}</h2>
+      {% endif %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top" width="203" style="width:203px;padding:0 18px 0 0;">
+            {% if module.card_image.src %}
+            <img src="{{ module.card_image.src|escape_url }}" width="203" alt="{{ module.card_image.alt|escape_attr }}" style="display:block;width:203px;max-width:100%;height:auto;border:0;border-radius:14px 14px 14px 0;" />
+            {% endif %}
+            {% if module.show_new_badge %}
+            <div style="margin-top:-19px;text-align:right;position:relative;z-index:2;"><span style="display:inline-block;width:75px;height:19px;line-height:19px;text-align:center;background:#5F2EC8;color:#FFFFFF;font-family:'Merriweather',Georgia,serif;font-size:10px;font-weight:800;border-radius:22px 0 14px 0;">{{ module.badge_text }}</span></div>
+            {% endif %}
+          </td>
+          <td valign="top" style="padding:8px;">
+            <h3 style="margin:0 0 7px 0;font-family:'Merriweather',Georgia,serif;font-size:14px;line-height:17px;font-weight:500;color:#000000;">{{ module.title }}</h3>
+            {% if module.approval_text %}
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 7px 0;">
+              <tr>
+                {% if module.rating_icon.src %}<td style="padding-right:4px;"><img src="{{ module.rating_icon.src|escape_url }}" width="12" alt="{{ module.rating_icon.alt|escape_attr }}" style="display:block;width:12px;height:auto;border:0;" /></td>{% endif %}
+                <td style="font-family:'Assistant',Arial,sans-serif;font-size:10px;line-height:13px;font-weight:600;color:#000000;">{{ module.approval_text }}</td>
+              </tr>
+            </table>
+            {% endif %}
+            <div style="font-family:'Assistant',Arial,sans-serif;font-size:12px;line-height:14px;color:#000000;">{{ module.description }}</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

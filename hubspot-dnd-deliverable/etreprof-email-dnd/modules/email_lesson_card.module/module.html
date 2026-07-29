@@ -1,0 +1,17 @@
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="#F8F3FF" style="background-color:#F8F3FF;padding:29px 80px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td width="203" valign="top" style="width:203px;padding-right:18px;">{% if module.card_image.src %}<img src="{{ module.card_image.src|escape_url }}" width="203" alt="{{ module.card_image.alt|escape_attr }}" style="display:block;width:203px;max-width:100%;height:auto;border:0;border-radius:14px 14px 14px 0;" />{% endif %}</td>
+          <td valign="top" style="padding:8px 0;">
+            <h2 style="margin:0 0 8px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:25px;font-weight:500;color:#000000;">{{ module.title }}</h2>
+            <div style="font-family:'Assistant',Arial,sans-serif;font-size:12px;line-height:14px;color:#000000;">{{ module.description }}</div>
+            <p style="margin:8px 0;font-family:'Inter',Arial,sans-serif;font-size:13px;line-height:16px;font-weight:700;color:#FFFFFF;"><span style="display:inline-block;padding:4px 12px;background:#5F2EC8;border-radius:14px 14px 14px 0;">{{ module.tag_1 }}</span>&nbsp;&nbsp;<span style="display:inline-block;padding:4px 12px;background:#5F2EC8;border-radius:14px 14px 14px 0;">{{ module.tag_2 }}</span></p>
+            <p style="margin:0;padding-top:8px;border-top:1px solid #CCCCCC;font-family:'Assistant',Arial,sans-serif;font-size:10px;line-height:13px;font-weight:600;color:#000000;">{{ module.approval_text }}</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

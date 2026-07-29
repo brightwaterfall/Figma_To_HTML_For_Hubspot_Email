@@ -1,0 +1,15 @@
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:32px 60px 20px 79px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        {% for item in module.steps %}
+        <tr>
+          <td valign="top" width="45" style="width:45px;padding-right:16px;font-family:Arial,sans-serif;font-size:45px;line-height:52px;font-weight:700;color:#5F2EC8;">{{ loop.index }}</td>
+          <td valign="middle" style="padding:9px 0;font-family:'Assistant',Arial,sans-serif;font-size:18px;line-height:20px;color:#000000;"><strong>{{ item.title }}</strong> {{ item.description }}</td>
+        </tr>
+        {% if not loop.last %}<tr><td colspan="2" height="16" style="font-size:0;line-height:0;">&nbsp;</td></tr>{% endif %}
+        {% endfor %}
+      </table>
+    </td>
+  </tr>
+</table>

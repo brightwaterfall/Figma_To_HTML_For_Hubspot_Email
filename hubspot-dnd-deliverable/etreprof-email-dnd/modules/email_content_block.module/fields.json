@@ -1,0 +1,175 @@
+[
+  {
+    "name": "alignment",
+    "label": "Alignment",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "Left",
+        "value": "left"
+      },
+      {
+        "label": "Center",
+        "value": "center"
+      }
+    ],
+    "display": "select",
+    "default": "center"
+  },
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "padding_top",
+    "label": "Padding top",
+    "type": "number",
+    "default": 23,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_sides",
+    "label": "Padding sides",
+    "type": "number",
+    "default": 42,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_bottom",
+    "label": "Padding bottom",
+    "type": "number",
+    "default": 40,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "item_gap",
+    "label": "Item gap",
+    "type": "number",
+    "default": 18,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "show_top_divider",
+    "label": "Show top divider",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "show_bottom_divider",
+    "label": "Show bottom divider",
+    "type": "boolean",
+    "default": false
+  },
+  {
+    "name": "logo",
+    "label": "Optional logo",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "name": "logo_width",
+    "label": "Logo width",
+    "type": "number",
+    "default": 119,
+    "min": 40,
+    "max": 200,
+    "step": 1
+  },
+  {
+    "name": "eyebrow",
+    "label": "Eyebrow / outline label",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "Pourquoi votre participation est essentielle ?"
+  },
+  {
+    "name": "heading_color",
+    "label": "Heading color",
+    "type": "color",
+    "default": {
+      "color": "#0E1E38",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "body",
+    "label": "Body",
+    "type": "richtext",
+    "default": "<p>Vos réponses font avancer une cause commune : mieux comprendre les besoins du terrain pour faire évoluer les solutions utiles à toute la communauté éducative.</p>"
+  },
+  {
+    "name": "body_color",
+    "label": "Body color",
+    "type": "color",
+    "default": {
+      "color": "#192633",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "accent_color",
+    "label": "Accent color",
+    "type": "color",
+    "default": {
+      "color": "#5F2EC8",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "action_text",
+    "label": "Text link",
+    "type": "text",
+    "default": "En savoir plus sur la démarche →"
+  },
+  {
+    "name": "action_link",
+    "label": "Action / CTA link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "show_cta",
+    "label": "Show solid CTA",
+    "type": "boolean",
+    "default": false
+  },
+  {
+    "name": "cta_text",
+    "label": "Solid CTA text",
+    "type": "text",
+    "default": ""
+  }
+]

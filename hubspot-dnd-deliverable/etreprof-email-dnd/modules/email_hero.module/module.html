@@ -1,0 +1,70 @@
+{% set cta_href = module.cta_link.href|default('https://www.etreprof.fr/', true) %}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  {% if module.show_image and module.hero_image.src %}
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:0;line-height:0;font-size:0;">
+      <img src="{{ module.hero_image.src|escape_url }}" width="600" alt="{{ module.hero_image.alt|escape_attr }}" style="display:block;width:100%;max-width:600px;height:auto;border:0;outline:none;text-decoration:none;border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;" />
+    </td>
+  </tr>
+  {% endif %}
+  {% if module.badge_text or module.secondary_badge_text %}
+  <tr>
+    <td align="right" bgcolor="{{ module.content_background.color }}" style="background-color:{{ module.content_background.color }};padding:0;font-size:0;line-height:0;">
+      {% if module.badge_text %}
+      <span style="display:inline-block;padding:10px 22px;background-color:{{ module.badge_background.color }};color:{{ module.badge_text_color.color }};font-family:'Merriweather',Georgia,serif;font-size:{{ module.badge_font_size }}px;line-height:22px;font-weight:800;border-top-left-radius:22px;">{{ module.badge_text }}</span>
+      {% endif %}
+      {% if module.secondary_badge_text %}
+      <span style="display:inline-block;padding:10px 22px;background-color:{{ module.secondary_badge_background.color }};color:{{ module.secondary_badge_text_color.color }};font-family:'Merriweather',Georgia,serif;font-size:{{ module.badge_font_size }}px;line-height:22px;font-weight:800;border-top-left-radius:22px;">{{ module.secondary_badge_text }}</span>
+      {% endif %}
+    </td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td align="center" bgcolor="{{ module.content_background.color }}" style="background-color:{{ module.content_background.color }};padding:{{ module.padding_top }}px {{ module.padding_sides }}px {{ module.padding_bottom }}px;text-align:center;border-top-left-radius:{{ module.scoop_radius }}px;">
+      {% if module.show_icon_row %}
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto {{ module.heading_gap }}px auto;">
+        <tr>
+          {% for icon in [module.icon_1, module.icon_2, module.icon_3] %}
+          {% if icon.src %}
+          <td style="padding:0 4px;line-height:0;font-size:0;"><img src="{{ icon.src|escape_url }}" width="35" alt="{{ icon.alt|escape_attr }}" style="display:block;width:35px;height:auto;border:0;" /></td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+      </table>
+      {% endif %}
+      {% if module.heading %}
+      <h1 style="margin:0 0 {{ module.heading_gap }}px 0;padding:0;font-family:'Merriweather',Georgia,'Times New Roman',serif;font-size:{{ module.heading_size }}px;line-height:{{ module.heading_line_height }}px;font-weight:{{ module.heading_weight }};color:{{ module.heading_color.color }};text-align:center;">{{ module.heading }}</h1>
+      {% endif %}
+      {% if module.show_personalized_greeting %}
+      <p style="margin:0 0 8px 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:22px;color:{{ module.body_color.color }};text-align:center;">Bonjour {{ contact.firstname|default('Prénom') }},</p>
+      {% endif %}
+      <div style="font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:{{ module.body_line_height }}px;font-weight:400;color:{{ module.body_color.color }};text-align:center;">{{ module.body }}</div>
+      {% if module.show_cta and module.cta_text %}
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:{{ module.cta_gap }}px auto 0 auto;">
+        <tr>
+          <td align="center" bgcolor="{{ module.cta_background.color }}" style="background-color:{{ module.cta_background.color }};border-radius:22px 22px 22px 0;">
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ cta_href|escape_url }}" style="height:47px;v-text-anchor:middle;width:{{ module.cta_vml_width }}px;" arcsize="50%" strokecolor="{{ module.cta_background.color }}" fillcolor="{{ module.cta_background.color }}">
+              <w:anchorlock/>
+              <center style="color:{{ module.cta_text_color.color }};font-family:Georgia,serif;font-size:18px;font-weight:400;">{{ module.cta_text }}</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;font-weight:400;color:{{ module.cta_text_color.color }};text-decoration:none;border-radius:22px 22px 22px 0;mso-hide:all;">{{ module.cta_text }}</a>
+            <!--<![endif]-->
+          </td>
+        </tr>
+      </table>
+      {% endif %}
+      {% if module.note %}
+      <p style="margin:20px 0 0 0;font-family:'Assistant',Arial,sans-serif;font-size:15px;line-height:22px;font-weight:600;color:#A6A6A6;text-align:center;">{{ module.note }}</p>
+      {% endif %}
+      {% if module.signature %}
+      <div style="margin-top:20px;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;color:#000000;text-align:center;">{{ module.signature }}</div>
+      {% endif %}
+      {% if module.show_divider %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top:{{ module.divider_gap }}px;"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+      {% endif %}
+    </td>
+  </tr>
+</table>

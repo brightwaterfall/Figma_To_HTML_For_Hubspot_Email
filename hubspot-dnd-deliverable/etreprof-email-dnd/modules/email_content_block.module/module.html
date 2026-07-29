@@ -1,0 +1,35 @@
+{% set action_href = module.action_link.href|default('https://www.etreprof.fr/', true) %}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="{{ module.alignment }}" bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.padding_top }}px {{ module.padding_sides }}px {{ module.padding_bottom }}px;text-align:{{ module.alignment }};">
+      {% if module.show_top_divider %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 {{ module.item_gap }}px 0;"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+      {% endif %}
+      {% if module.logo.src %}
+      <img src="{{ module.logo.src|escape_url }}" width="{{ module.logo_width }}" alt="{{ module.logo.alt|escape_attr }}" style="display:block;width:{{ module.logo_width }}px;height:auto;border:0;margin:0 {% if module.alignment == 'center' %}auto{% else %}0{% endif %} {{ module.item_gap }}px;" />
+      {% endif %}
+      {% if module.eyebrow %}
+      <p style="margin:0 0 {{ module.item_gap }}px 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:700;color:{{ module.accent_color.color }};text-align:{{ module.alignment }};">{{ module.eyebrow }}</p>
+      {% endif %}
+      {% if module.heading %}
+      <h2 style="margin:0 0 {{ module.item_gap }}px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:29px;font-weight:600;color:{{ module.heading_color.color }};text-align:{{ module.alignment }};">{{ module.heading }}</h2>
+      {% endif %}
+      <div style="font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:{{ module.body_color.color }};text-align:{{ module.alignment }};">{{ module.body }}</div>
+      {% if module.action_text %}
+      <p style="margin:{{ module.item_gap }}px 0 0 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:700;text-align:{{ module.alignment }};"><a href="{{ action_href|escape_url }}" target="_blank" style="color:{{ module.accent_color.color }};text-decoration:none;">{{ module.action_text }}</a></p>
+      {% endif %}
+      {% if module.show_cta and module.cta_text %}
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="{{ module.alignment }}" style="margin:{{ module.item_gap }}px {% if module.alignment == 'center' %}auto{% else %}0{% endif %} 0;">
+        <tr>
+          <td bgcolor="{{ module.accent_color.color }}" style="background-color:{{ module.accent_color.color }};border-radius:22px 22px 22px 0;">
+            <a href="{{ action_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;">{{ module.cta_text }}</a>
+          </td>
+        </tr>
+      </table>
+      {% endif %}
+      {% if module.show_bottom_divider %}
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:{{ module.item_gap }}px 0 0 0;"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+      {% endif %}
+    </td>
+  </tr>
+</table>

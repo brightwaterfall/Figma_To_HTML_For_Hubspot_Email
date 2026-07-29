@@ -1,0 +1,24 @@
+{% set cta_href = module.cta_link.href|default('https://www.etreprof.fr/', true) %}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="center" bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:{{ module.padding_top }}px 32px {{ module.padding_bottom }}px 32px;text-align:center;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tr>
+          <td bgcolor="{{ module.button_color.color }}" style="background-color:{{ module.button_color.color }};border-radius:22px 22px 22px 0;">
+            <!--[if mso]>
+            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ cta_href|escape_url }}" style="height:47px;v-text-anchor:middle;width:{{ module.vml_width }}px;" arcsize="50%" strokecolor="{{ module.button_color.color }}" fillcolor="{{ module.button_color.color }}">
+              <w:anchorlock/>
+              <center style="color:#FFFFFF;font-family:Georgia,serif;font-size:18px;font-weight:400;">{{ module.cta_text }}</center>
+            </v:roundrect>
+            <![endif]-->
+            <!--[if !mso]><!-->
+            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;mso-hide:all;">{{ module.cta_text }}</a>
+            <!--<![endif]-->
+          </td>
+        </tr>
+      </table>
+      {% if module.note %}<p style="margin:17px 0;font-family:'Assistant',Arial,sans-serif;font-size:15px;line-height:22px;font-weight:600;color:#A6A6A6;">{{ module.note }}</p>{% endif %}
+      {% if module.show_divider %}<table role="presentation" width="482" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:100%;margin:0 auto;"><tr><td style="border-top:1px solid #CCCCCC;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr></table>{% endif %}
+    </td>
+  </tr>
+</table>

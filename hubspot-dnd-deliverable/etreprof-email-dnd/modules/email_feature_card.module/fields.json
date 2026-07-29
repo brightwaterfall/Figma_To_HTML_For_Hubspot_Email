@@ -1,0 +1,30 @@
+[
+  {
+    "name": "text",
+    "label": "Text",
+    "type": "richtext",
+    "default": "<p>Inspire-toi de milliers de ressources testées en classe.</p>"
+  },
+  {
+    "name": "icon",
+    "label": "Icon",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../images/email-05-school.png') }}",
+      "alt": "",
+      "width": 43,
+      "height": 43
+    }
+  },
+  {
+    "name": "bottom_gap",
+    "label": "Bottom gap",
+    "type": "number",
+    "default": 8,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  }
+]

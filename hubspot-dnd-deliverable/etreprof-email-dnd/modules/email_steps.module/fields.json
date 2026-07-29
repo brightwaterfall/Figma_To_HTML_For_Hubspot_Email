@@ -1,0 +1,50 @@
+[
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "steps",
+    "label": "Steps",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3,
+      "sorting_label_field": "steps.title"
+    },
+    "children": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "text",
+        "default": "Trouve l'idée :"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text",
+        "default": "Laisse-toi inspirer par les séquences de la communauté."
+      }
+    ],
+    "default": [
+      {
+        "title": "Trouve l'idée :",
+        "description": "Laisse-toi inspirer par les séquences de la communauté."
+      },
+      {
+        "title": "Adapte au profil :",
+        "description": "Ajuste le contenu pour tes élèves en un clic."
+      },
+      {
+        "title": "Imprime le tout :",
+        "description": "Ta fiche et tes supports sont prêts pour demain."
+      }
+    ]
+  }
+]

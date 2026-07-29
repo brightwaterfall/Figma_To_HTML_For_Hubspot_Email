@@ -1,0 +1,19 @@
+{% set cta_href = module.cta_link.href|default('https://www.etreprof.fr/', true) %}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="center" bgcolor="{{ module.background_color.color }}" style="background-color:{{ module.background_color.color }};padding:28px 66px 46px 66px;text-align:center;">
+      <p style="margin:0 0 -12px 0;font-family:'Candal',Georgia,serif;font-size:53px;line-height:64px;color:{{ module.quote_mark_color.color }};">"</p>
+      <div style="font-family:'Merriweather',Georgia,serif;font-size:26px;line-height:34px;font-weight:500;font-style:italic;color:{{ module.text_color.color }};text-align:center;">{{ module.quote }}</div>
+      <p style="margin:12px 0 24px 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:24px;color:#231F20;">{{ module.attribution }}</p>
+      {% if module.cta_text %}
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tr>
+          <td bgcolor="#5F2EC8" style="background:#5F2EC8;border-radius:22px 22px 22px 0;">
+            <a href="{{ cta_href|escape_url }}" target="_blank" style="display:inline-block;padding:12px 22px;font-family:'Merriweather',Georgia,serif;font-size:18px;line-height:23px;color:#FFFFFF;text-decoration:none;">{{ module.cta_text }}</a>
+          </td>
+        </tr>
+      </table>
+      {% endif %}
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,81 @@
+[
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "padding_top",
+    "label": "Padding top",
+    "type": "number",
+    "default": 16,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "padding_bottom",
+    "label": "Padding bottom",
+    "type": "number",
+    "default": 19,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "cta_text",
+    "label": "CTA text",
+    "type": "text",
+    "default": "Préparer ma séance"
+  },
+  {
+    "name": "cta_link",
+    "label": "CTA link",
+    "type": "url",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS"
+    ],
+    "default": {
+      "type": "EXTERNAL",
+      "href": "https://www.etreprof.fr/",
+      "content_id": null
+    }
+  },
+  {
+    "name": "button_color",
+    "label": "Button color",
+    "type": "color",
+    "default": {
+      "color": "#5F2EC8",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "vml_width",
+    "label": "Outlook CTA width",
+    "type": "number",
+    "default": 213,
+    "min": 120,
+    "max": 360,
+    "step": 1
+  },
+  {
+    "name": "note",
+    "label": "Note",
+    "type": "text",
+    "default": "Rejoins les 15 000 profs qui ont déjà préparé leur semaine."
+  },
+  {
+    "name": "show_divider",
+    "label": "Show divider",
+    "type": "boolean",
+    "default": true
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "side_padding",
+    "label": "Side padding",
+    "type": "number",
+    "default": 61,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "bottom_gap",
+    "label": "Bottom gap",
+    "type": "number",
+    "default": 24,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "section_heading",
+    "label": "Optional section heading",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "title",
+    "label": "Title",
+    "type": "text",
+    "default": "Développer les compétences orales des élèves avec l'IA : activités et prompts à utiliser"
+  },
+  {
+    "name": "avatar",
+    "label": "Avatar",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "default": {
+      "src": "{{ get_asset_url('../images/email-02-avatar.png') }}",
+      "alt": "Mickaël Bertrand",
+      "width": 38,
+      "height": 38
+    }
+  },
+  {
+    "name": "presenter",
+    "label": "Presenter",
+    "type": "text",
+    "default": "Mickaël Bertrand"
+  },
+  {
+    "name": "presenter_role",
+    "label": "Presenter role",
+    "type": "text",
+    "default": "Professeur d'histoire-géographie-EMC"
+  },
+  {
+    "name": "time",
+    "label": "Time tag",
+    "type": "text",
+    "default": "19h"
+  },
+  {
+    "name": "date",
+    "label": "Date tag",
+    "type": "text",
+    "default": "20 juillet 2026"
+  },
+  {
+    "name": "location",
+    "label": "Location tag",
+    "type": "text",
+    "default": "En ligne"
+  }
+]

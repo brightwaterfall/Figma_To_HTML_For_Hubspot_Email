@@ -1,0 +1,141 @@
+[
+  {
+    "name": "background_color",
+    "label": "Background",
+    "type": "color",
+    "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+    }
+  },
+  {
+    "name": "padding",
+    "label": "Padding",
+    "type": "number",
+    "default": 32,
+    "min": 0,
+    "max": 120,
+    "step": 1
+  },
+  {
+    "name": "custom_line_1",
+    "label": "Custom line 1",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "custom_line_2",
+    "label": "Custom line 2",
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "social_links",
+    "label": "Social links",
+    "type": "group",
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 4,
+      "sorting_label_field": "social_links.icon"
+    },
+    "children": [
+      {
+        "name": "icon",
+        "label": "Icon",
+        "type": "image",
+        "responsive": true,
+        "resizable": true,
+        "default": {
+          "src": "{{ get_asset_url('../icons/icon-instagram.png') }}",
+          "alt": "Instagram",
+          "width": 24,
+          "height": 24
+        }
+      },
+      {
+        "name": "link",
+        "label": "Link",
+        "type": "url",
+        "supported_types": [
+          "EXTERNAL",
+          "CONTENT",
+          "FILE",
+          "EMAIL_ADDRESS"
+        ],
+        "default": {
+          "type": "EXTERNAL",
+          "href": "https://www.instagram.com/",
+          "content_id": null
+        }
+      },
+      {
+        "name": "width",
+        "label": "Icon width",
+        "type": "number",
+        "default": 24,
+        "min": 16,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "default": [
+      {
+        "icon": {
+          "src": "{{ get_asset_url('../icons/icon-instagram.png') }}",
+          "alt": "Instagram",
+          "width": 24,
+          "height": 24
+        },
+        "link": {
+          "type": "EXTERNAL",
+          "href": "https://www.instagram.com/",
+          "content_id": null
+        },
+        "width": 24
+      },
+      {
+        "icon": {
+          "src": "{{ get_asset_url('../icons/icon-facebook.png') }}",
+          "alt": "Facebook",
+          "width": 24,
+          "height": 24
+        },
+        "link": {
+          "type": "EXTERNAL",
+          "href": "https://www.facebook.com/",
+          "content_id": null
+        },
+        "width": 24
+      },
+      {
+        "icon": {
+          "src": "{{ get_asset_url('../icons/icon-x.png') }}",
+          "alt": "X",
+          "width": 20,
+          "height": 20
+        },
+        "link": {
+          "type": "EXTERNAL",
+          "href": "https://x.com/",
+          "content_id": null
+        },
+        "width": 20
+      },
+      {
+        "icon": {
+          "src": "{{ get_asset_url('../icons/icon-youtube.png') }}",
+          "alt": "YouTube",
+          "width": 24,
+          "height": 24
+        },
+        "link": {
+          "type": "EXTERNAL",
+          "href": "https://www.youtube.com/",
+          "content_id": null
+        },
+        "width": 24
+      }
+    ]
+  }
+]

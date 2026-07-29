@@ -1,0 +1,142 @@
+<!--
+  templateType: email
+  isAvailableForNewContent: true
+  label: être PROF — Lesson Prep
+  enableDomainStylesheets: false
+-->
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>être PROF — Lesson Prep</title>
+  {{ email_header_includes }}
+  {{ dnd_area_stylesheet }}
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Candal&family=Inter:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style type="text/css">
+    body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; }
+    img { -ms-interpolation-mode:bicubic; border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+    body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#F3F3E9; }
+    #preview_text { display:none !important; }
+  </style>
+</head>
+<body width="100%" style="margin:0;padding:0;background-color:#F3F3E9;">
+  <div id="preview_text" style="display:none!important;">{% text "preview_text" label="Preview Text", value="Ta prochaine séance, prête en un instant.", no_wrapper=True %}</div>
+  <center role="article" aria-roledescription="email" lang="fr" style="width:100%;background-color:#F3F3E9;">
+    <!--[if mso]>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="624" align="center"><tr><td>
+    <![endif]-->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:624px;margin:0 auto;background-color:#FFFFFF;">
+      <tr>
+        <td align="center" style="padding:0;">
+{% dnd_area "main_email_area", label="Email content", full_width=false %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_header.module",
+      offset=0,
+      width=12,
+      padding_top=29,
+      padding_bottom=26
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_hero.module",
+      offset=0,
+      width=12,
+      hero_image={"src": "{{ get_asset_url('../images/email-03-hero-clean-600.jpg') }}", "alt": "Enseignantes préparant une séance", "width": 600, "height": 380},
+      badge_text="Top chrono : 10 min",
+      badge_font_size=14,
+      show_icon_row=True,
+      icon_1={"src": "{{ get_asset_url('../images/email-03-smile.png') }}", "alt": "", "width": 35, "height": 35},
+      icon_2={"src": "{{ get_asset_url('../images/email-03-launch.png') }}", "alt": "", "width": 35, "height": 35},
+      icon_3={"src": "{{ get_asset_url('../images/email-03-laptop.png') }}", "alt": "", "width": 35, "height": 35},
+      heading="Ta prochaine séance, prête en un instant.",
+      heading_size=23,
+      heading_line_height=28,
+      heading_weight=500,
+      show_personalized_greeting=True,
+      body="<p>tu as déjà passé ton dimanche après-midi devant une page blanche&nbsp;? Sur le nouvel ÊtrePROF, tu ne pars plus de zéro. Gagne un temps précieux en t'appuyant sur les séquences créées et testées par tes collègues.</p>",
+      show_cta=False,
+      note="",
+      signature="",
+      padding_top=35,
+      padding_sides=66,
+      padding_bottom=24
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_lesson_card.module",
+      offset=0,
+      width=12
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_steps.module",
+      offset=0,
+      width=12
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_cta.module",
+      offset=0,
+      width=12,
+      cta_text="Préparer ma séance",
+      note="Rejoins les 15 000 profs qui ont déjà préparé leur semaine.",
+      vml_width=213
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+  {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
+    {% dnd_column offset=0, width=12 %}
+      {% dnd_module
+      path="../modules/email_footer.module",
+      offset=0,
+      width=12,
+      padding=32
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
+        </td>
+      </tr>
+    </table>
+    <!--[if mso]>
+    </td></tr></table>
+    <![endif]-->
+  </center>
+</body>
+</html>
