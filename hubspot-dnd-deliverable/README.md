@@ -73,6 +73,13 @@ Use one of these instead:
    - `etre PROF - Transactionnel`
    - `etre PROF - Bienvenue`
 
+### Editing images and text
+
+1. Create a **new email from the template** (old drafts keep previous field values).
+2. Click a module on the canvas — editable fields appear in the left sidebar.
+3. Image fields now use HTTPS URLs so HubSpot’s image picker works (replace via the sidebar).
+4. Optional card CTAs: turn on **Show CTA**, then edit text/URL.
+
 6. Edit modules in the visual editor sidebar (add / delete / duplicate / reorder)
 7. Send a test email and verify Outlook / Gmail / Apple Mail
 

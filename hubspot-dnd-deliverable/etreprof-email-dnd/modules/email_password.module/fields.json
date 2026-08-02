@@ -12,6 +12,18 @@
     "default": true
   },
   {
+    "name": "greeting_prefix",
+    "label": "Greeting prefix",
+    "type": "text",
+    "default": "Bonjour"
+  },
+  {
+    "name": "greeting_fallback_name",
+    "label": "Greeting name fallback",
+    "type": "text",
+    "default": "Prénom"
+  },
+  {
     "name": "body_copy",
     "label": "Body",
     "type": "richtext",
