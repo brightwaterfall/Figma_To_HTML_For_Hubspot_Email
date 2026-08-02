@@ -54,9 +54,26 @@ etreprof-email-dnd/
 hs cms upload etreprof-email-dnd etreprof-email-dnd
 ```
 
-4. In HubSpot: **Marketing → Email → Create email → Regular**
-5. Select one of the uploaded templates (label starts with `être PROF —`)
-6. Edit modules in the visual editor sidebar
+4. Open **Design Manager** and confirm folder `etreprof-email-dnd` (templates + modules published)
+5. Create an email from a **coded** template (not the built-in drag-and-drop starter gallery)
+
+### Where to find the templates (important)
+
+The URL `.../email/.../create/all?subcategory=drag_drop_email` only lists HubSpot’s **built-in** starter layouts. Custom Design Manager templates do **not** appear there.
+
+Use one of these instead:
+
+1. **Design Manager → open a template → Create email**  
+   [Design Manager](https://app-eu1.hubspot.com/design-manager/147432241) → `etreprof-email-dnd` → `templates` → open e.g. `email-01-survey.html` → **Actions / Create email** (wording may vary by UI language).
+
+2. **Marketing → Email → Create → Regular**, then pick a **saved / custom / coded** template (not “drag and drop email” starters). Search labels:
+   - `etre PROF - Barometre`
+   - `etre PROF - Infolettre`
+   - `etre PROF - Activation`
+   - `etre PROF - Transactionnel`
+   - `etre PROF - Bienvenue`
+
+6. Edit modules in the visual editor sidebar (add / delete / duplicate / reorder)
 7. Send a test email and verify Outlook / Gmail / Apple Mail
 
 ## ZIP / API alternative

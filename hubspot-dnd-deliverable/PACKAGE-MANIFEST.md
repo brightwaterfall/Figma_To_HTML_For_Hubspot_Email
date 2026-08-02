@@ -4,11 +4,11 @@
 
 | File | Label |
 |---|---|
-| templates/email-01-survey.html | être PROF — Baromètre |
-| templates/email-02-newsletter.html | être PROF — Infolettre |
-| templates/email-03-lesson.html | être PROF — Activation |
-| templates/email-04-password.html | être PROF — Transactionnel |
-| templates/email-05-welcome.html | être PROF — Bienvenue |
+| templates/email-01-survey.html | etre PROF - Barometre |
+| templates/email-02-newsletter.html | etre PROF - Infolettre |
+| templates/email-03-lesson.html | etre PROF - Activation |
+| templates/email-04-password.html | etre PROF - Transactionnel |
+| templates/email-05-welcome.html | etre PROF - Bienvenue |
 
 ## Modules
 
