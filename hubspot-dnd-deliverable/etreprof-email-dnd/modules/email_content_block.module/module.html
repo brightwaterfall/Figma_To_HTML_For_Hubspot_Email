@@ -33,7 +33,7 @@
       {% if module.heading %}
       <div style="margin:0 0 {{ module.item_gap }}px 0;font-family:'Merriweather',Georgia,serif;font-size:23px;line-height:29px;font-weight:600;color:{{ module.heading_color.color }};text-align:{{ module.alignment }};">{{ module.heading }}</div>
       {% endif %}
-      <div style="font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:{{ module.body_color.color }};text-align:{{ module.alignment }};">{{ module.body }}</div>
+      <div style="font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:400;color:{{ module.body_color.color }};text-align:{{ module.alignment }};">{{ module.body_copy }}</div>
       {% if module.action_text %}
       <p style="margin:{{ module.item_gap }}px 0 0 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:21px;font-weight:700;text-align:{{ module.alignment }};"><a href="{{ action_href|escape_url }}" target="_blank" style="color:{{ module.accent_color.color }};text-decoration:none;">{{ module.action_text }}</a></p>
       {% endif %}

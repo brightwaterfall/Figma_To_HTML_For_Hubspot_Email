@@ -44,8 +44,7 @@
     ],
     "default": {
       "type": "EXTERNAL",
-      "href": "https://www.etreprof.fr/",
-      "content_id": null
+      "href": "https://www.etreprof.fr/"
     }
   },
   {

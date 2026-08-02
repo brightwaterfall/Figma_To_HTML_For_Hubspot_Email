@@ -60,7 +60,7 @@
             {% if module.show_personalized_greeting %}
             <p style="margin:0 0 8px 0;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:22px;color:{{ module.body_color.color }};text-align:center;">Bonjour {{ contact.firstname|default('Prénom') }},</p>
             {% endif %}
-            <div style="font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:{{ module.body_line_height }}px;font-weight:400;color:{{ module.body_color.color }};text-align:center;">{{ module.body }}</div>
+            <div style="font-family:'Assistant',Arial,Helvetica,sans-serif;font-size:16px;line-height:{{ module.body_line_height }}px;font-weight:400;color:{{ module.body_color.color }};text-align:center;">{{ module.body_copy }}</div>
             {% if module.show_cta and module.cta_text %}
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:{{ module.cta_gap }}px auto 0 auto;">
               <tr>

@@ -4,14 +4,14 @@
     "label": "Alignment",
     "type": "choice",
     "choices": [
-      {
-        "label": "Left",
-        "value": "left"
-      },
-      {
-        "label": "Center",
-        "value": "center"
-      }
+      [
+        "left",
+        "Left"
+      ],
+      [
+        "center",
+        "Center"
+      ]
     ],
     "display": "select",
     "default": "center"
@@ -104,14 +104,14 @@
     "label": "Eyebrow style",
     "type": "choice",
     "choices": [
-      {
-        "label": "Plain text",
-        "value": "text"
-      },
-      {
-        "label": "Outline chip (linked)",
-        "value": "outline"
-      }
+      [
+        "text",
+        "Plain text"
+      ],
+      [
+        "outline",
+        "Outline chip (linked)"
+      ]
     ],
     "display": "select",
     "default": "text"
@@ -128,8 +128,7 @@
     ],
     "default": {
       "type": "EXTERNAL",
-      "href": "https://www.etreprof.fr/",
-      "content_id": null
+      "href": "https://www.etreprof.fr/"
     }
   },
   {
@@ -148,7 +147,7 @@
     }
   },
   {
-    "name": "body",
+    "name": "body_copy",
     "label": "Body",
     "type": "richtext",
     "default": "<p>Vos réponses font avancer une cause commune : mieux comprendre les besoins du terrain pour faire évoluer les solutions utiles à toute la communauté éducative.</p>"
@@ -189,8 +188,7 @@
     ],
     "default": {
       "type": "EXTERNAL",
-      "href": "https://www.etreprof.fr/",
-      "content_id": null
+      "href": "https://www.etreprof.fr/"
     }
   },
   {

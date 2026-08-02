@@ -65,8 +65,7 @@
         ],
         "default": {
           "type": "EXTERNAL",
-          "href": "https://www.instagram.com/",
-          "content_id": null
+          "href": "https://www.instagram.com/"
         }
       },
       {
@@ -89,8 +88,7 @@
         },
         "link": {
           "type": "EXTERNAL",
-          "href": "https://www.instagram.com/",
-          "content_id": null
+          "href": "https://www.instagram.com/"
         },
         "width": 24
       },
@@ -103,8 +101,7 @@
         },
         "link": {
           "type": "EXTERNAL",
-          "href": "https://www.facebook.com/",
-          "content_id": null
+          "href": "https://www.facebook.com/"
         },
         "width": 24
       },
@@ -117,8 +114,7 @@
         },
         "link": {
           "type": "EXTERNAL",
-          "href": "https://x.com/",
-          "content_id": null
+          "href": "https://x.com/"
         },
         "width": 20
       },
@@ -131,8 +127,7 @@
         },
         "link": {
           "type": "EXTERNAL",
-          "href": "https://www.youtube.com/",
-          "content_id": null
+          "href": "https://www.youtube.com/"
         },
         "width": 24
       }

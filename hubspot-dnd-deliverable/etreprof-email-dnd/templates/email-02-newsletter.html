@@ -44,7 +44,7 @@
     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:624px;margin:0 auto;background-color:#FFFFFF;">
       <tr>
         <td align="center" style="padding:0;">
-{% dnd_area "main_email_area", label="Email content", full_width=false %}
+{% dnd_area "main", label="Email content", full_width=false %}
   {% dnd_section full_width=false, padding={'top':0,'bottom':0,'left':0,'right':0} %}
     {% dnd_column offset=0, width=12 %}
       {% dnd_module
@@ -75,7 +75,7 @@
       heading="L'essentiel pour ta classe",
       heading_weight=600,
       show_personalized_greeting=True,
-      body="<p>découvre les nouvelles thématiques de la semaine. On met le cap sur l'inclusion et les rituels de transition pour apaiser tes journées.</p>",
+      body_copy="<p>découvre les nouvelles thématiques de la semaine. On met le cap sur l'inclusion et les rituels de transition pour apaiser tes journées.</p>",
       cta_text="Découvrir la sélection",
       cta_link={"type": "EXTERNAL", "href": "https://www.etreprof.fr/", "content_id": null},
       show_cta=True,
@@ -190,7 +190,7 @@
       logo_width=119,
       heading="Aller plus loin sur le bien-être à l'école",
       heading_color={"color": "#313233", "opacity": 100},
-      body="<p>Dans le prolongement de cet article, Scholavie propose des ressources complémentaires pour accompagner vos élèves.</p>",
+      body_copy="<p>Dans le prolongement de cet article, Scholavie propose des ressources complémentaires pour accompagner vos élèves.</p>",
       body_color={"color": "#231F20", "opacity": 100},
       action_text="Découvrir les ressources →",
       show_top_divider=False,

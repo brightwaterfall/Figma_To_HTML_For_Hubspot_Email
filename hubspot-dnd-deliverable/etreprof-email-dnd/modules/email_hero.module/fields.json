@@ -241,7 +241,7 @@
     "default": false
   },
   {
-    "name": "body",
+    "name": "body_copy",
     "label": "Body",
     "type": "richtext",
     "default": "<p>Tu utilises ÊtrePROF au quotidien. Pour que la plateforme réponde vraiment à tes réalités de terrain, nous avons besoin de ton retour.</p>"
@@ -288,8 +288,7 @@
     ],
     "default": {
       "type": "EXTERNAL",
-      "href": "https://www.etreprof.fr/",
-      "content_id": null
+      "href": "https://www.etreprof.fr/"
     }
   },
   {
