@@ -16,7 +16,6 @@ venv/
 .DS_Store
 Thumbs.db
 .idea/
-.vscode/
 .cursor/
 *.swp
 
@@ -32,3 +31,7 @@ images/email-02-smile.png
 
 # Temp / local QA scratch
 *.log
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

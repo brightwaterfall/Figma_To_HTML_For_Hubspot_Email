@@ -29,5 +29,5 @@
       "source": "USER"
     }
   ],
-  "inline_help_text": "Email-safe editable module. Prefer short text and hosted images."
+  "inline_help_text": "Hero image is a simple 600px-wide block. Bake badges and bubbles into the image (Canva 600×380, export 1200×760). Heading, body and CTA stay editable below."
 }

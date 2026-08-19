@@ -11,69 +11,13 @@
     "type": "image",
     "responsive": true,
     "resizable": true,
+    "inline_help_text": "Flatten badges/bubbles into this image in Canva. Display size: 600×380 px. Export at 1200×760 px for retina.",
     "default": {
       "src": "",
       "alt": "Hero",
       "width": 600,
       "height": 380
     }
-  },
-  {
-    "name": "badge_text",
-    "label": "Primary badge",
-    "type": "text",
-    "default": "Ton avis"
-  },
-  {
-    "name": "secondary_badge_text",
-    "label": "Secondary badge",
-    "type": "text",
-    "default": ""
-  },
-  {
-    "name": "badge_background",
-    "label": "Primary badge background",
-    "type": "color",
-    "default": {
-      "color": "#5F2EC8",
-      "opacity": 100
-    }
-  },
-  {
-    "name": "badge_text_color",
-    "label": "Primary badge text",
-    "type": "color",
-    "default": {
-      "color": "#FFFFFF",
-      "opacity": 100
-    }
-  },
-  {
-    "name": "secondary_badge_background",
-    "label": "Secondary badge background",
-    "type": "color",
-    "default": {
-      "color": "#5F2EC8",
-      "opacity": 100
-    }
-  },
-  {
-    "name": "secondary_badge_text_color",
-    "label": "Secondary badge text",
-    "type": "color",
-    "default": {
-      "color": "#FFFFFF",
-      "opacity": 100
-    }
-  },
-  {
-    "name": "badge_font_size",
-    "label": "Badge font size",
-    "type": "number",
-    "default": 20,
-    "min": 10,
-    "max": 28,
-    "step": 1
   },
   {
     "name": "content_background",
@@ -85,19 +29,10 @@
     }
   },
   {
-    "name": "scoop_radius",
-    "label": "Scoop radius",
-    "type": "number",
-    "default": 42,
-    "min": 0,
-    "max": 60,
-    "step": 1
-  },
-  {
     "name": "padding_top",
     "label": "Padding top",
     "type": "number",
-    "default": 62,
+    "default": 32,
     "min": 0,
     "max": 120,
     "step": 1
@@ -374,14 +309,5 @@
       "color": "#A6A6A6",
       "opacity": 100
     }
-  },
-  {
-    "name": "overlap_amount",
-    "label": "Scoop overlap (px)",
-    "type": "number",
-    "default": 34,
-    "min": 0,
-    "max": 80,
-    "step": 1
   }
 ]

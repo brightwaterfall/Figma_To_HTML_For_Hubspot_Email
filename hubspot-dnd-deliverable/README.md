@@ -21,7 +21,7 @@ Official constraints used:
 | Module | Editable |
 |---|---|
 | Header | Logo image + View in browser link |
-| Hero | Main image, H1, H2, paragraph, CTA text + URL |
+| Hero | Full-width image (badges baked in), H1, H2, paragraph, CTA text + URL |
 | Editorial | Rich text title/body + font colors (+ optional outline chip) |
 | Resource card | Thumbnail, title, short text, optional CTA |
 | Divider/Spacer | Spacing + optional line |

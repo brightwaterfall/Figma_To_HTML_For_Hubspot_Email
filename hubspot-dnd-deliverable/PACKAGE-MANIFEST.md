@@ -15,7 +15,7 @@
 | Module | Purpose |
 |---|---|
 | modules/email_header.module | Logo header |
-| modules/email_hero.module | Hero / scoop / intro CTA |
+| modules/email_hero.module | Hero image (600×380) + intro CTA |
 | modules/email_content_block.module | Text sections |
 | modules/email_resource_card.module | Resource cards |
 | modules/email_divider_spacer.module | Divider / adjustable spacing |
@@ -31,7 +31,7 @@
 ## Notes
 
 - Default visual content matches the approved flat HTML emails.
-- Hero scoop overlap + badge seam restored to match Figma flats.
+- Hero badges/bubbles are flattened into the image (Canva 600×380, export 1200×760). No CSS overlap.
 - DnD email grid minimum width is 624px; original 600px content is centered inside.
 - Resource/workshop/feature card CTAs are available but off by default (match approved design).
 - Final portal preview/test is still required by the client after `hs cms upload`.
